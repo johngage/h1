@@ -9,3 +9,5 @@ next_page:
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 ## Plans for August 2019
+
+Fix jupyter-book

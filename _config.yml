@@ -22,7 +22,7 @@ email: john.gage@gmail.com
 description: >-
   Please create good index.html
 
-baseurl: h1/_site            # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+baseurl: /h1/_site            # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
 url: https://johngage.github.io             # the base hostname & protocol for your site, e.g. http://example.com
 
 
