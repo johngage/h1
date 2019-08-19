@@ -138,6 +138,8 @@ exclude:
 - vendor/cache/
 - vendor/gems/
 - vendor/ruby/
+# Include files generated locally
+include: _site
 
 plugins:
 - jekyll-redirect-from
