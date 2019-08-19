@@ -8,9 +8,6 @@ next_page:
   title: 'Intro'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-## Plans for August 2019
+## Survey of international and US technology for household-level wastewater processing
 
-Fix jupyter-book by adding:
-- new _config.yml url to _site;
-- touch .nojekyll
-- change docker to build
+Published as JupyterBook on Monday, August 19, 2019
