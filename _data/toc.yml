@@ -22,23 +22,23 @@
 # See the links below for an example.
 
 # Top-level page
-- title: Home
-  url: /intro
-  not_numbered: true
 - header: 'Quick survey of 2019 NSSS Technology'
-- title: Intro
+
+- title: Home
   url: /0.5/intro1
-  expand_sections: true
   not_numbered: true
+  expand_sections: true
   sections:
   - title: Manufacturers
     url: /0.5/manufacturers
+    not_numbered: true
   - title: Testing
     url: /0.5/testing
   - title: Measuring Nutrient mass
     url: /0.5/ExpressionsAndUnits
+    not_numbered: true
 
-- title: Overview
+- title: Design of Treatment Systems
   url: /01/1/overview
   not_numbered: true
   expand_sections: true
