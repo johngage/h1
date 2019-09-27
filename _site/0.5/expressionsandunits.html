@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Measuring Nutrient mass</title>
-  <meta name="description" content="3.1 Expressions And Units For Analyzing Wastewater FlowsProgramming languages are much simpler than human languages. Nonetheless, there are some rules of gra...">
+  <meta name="description" content="3.1 Expressions And Units For Analyzing Wastewater Flows Programming languages are much simpler than human languages. Nonetheless, there are some rules of gr...">
 
   <link rel="canonical" href="https://johngage.github.io/h1/0.5/ExpressionsAndUnits.html">
   <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="https://johngage.github.io/h1/feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="https://johngage.github.io/h1/0.5/ExpressionsAndUnits.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Measuring Nutrient mass" />
-<meta property="og:description" content="3.1 Expressions And Units For Analyzing Wastewater FlowsProgramming languages are much simpler than human languages. Nonetheless, there are some rules of gra..." />
+<meta property="og:description" content="3.1 Expressions And Units For Analyzing Wastewater Flows Programming languages are much simpler than human languages. Nonetheless, there are some rules of gr..." />
 <meta property="og:image"       content="https://johngage.github.io/h1/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "https://johngage.github.io/h1/0.5/ExpressionsAndUnits.html",
   "headline": "Measuring Nutrient mass",
-  "datePublished": "2019-09-27T11:34:34-07:00",
-  "dateModified": "2019-09-27T11:34:34-07:00",
-  "description": "3.1 Expressions And Units For Analyzing Wastewater FlowsProgramming languages are much simpler than human languages. Nonetheless, there are some rules of gra...",
+  "datePublished": "2019-09-27T16:07:50-07:00",
+  "dateModified": "2019-09-27T16:07:50-07:00",
+  "description": "3.1 Expressions And Units For Analyzing Wastewater Flows Programming languages are much simpler than human languages. Nonetheless, there are some rules of gr...",
   "author": {
     "@type": "Person",
     "name": "John Gage"
@@ -805,257 +805,463 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <h1 id="31-expressions-and-units-for-analyzing-wastewater-flows">3.1 Expressions And Units For Analyzing Wastewater Flows</h1>
-<p>Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the <a href="https://www.python.org/">Python</a> programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs.</p>
+              <main class="jupyter-page">
+<div class="jb_cell">
 
-<p>Programs are made up of <em>expressions</em>, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a <code class="highlighter-rouge">*</code> symbol between two numerical expressions. Expressions, such as <code class="highlighter-rouge">3 * 5</code>, are <em>evaluated</em> by the computer. The value (the result of <em>evaluation</em>) of the last expression in each cell, <code class="highlighter-rouge">15</code> in this case, is displayed below the cell.</p>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.1-Expressions-And-Units-For-Analyzing-Wastewater-Flows">3.1 Expressions And Units For Analyzing Wastewater Flows<a class="anchor-link" href="#3.1-Expressions-And-Units-For-Analyzing-Wastewater-Flows"> </a></h1><p>Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the <a href="https://www.python.org/">Python</a> programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs.</p>
+<p>Programs are made up of <em>expressions</em>, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a <code>*</code> symbol between two numerical expressions. Expressions, such as <code>3 * 5</code>, are <em>evaluated</em> by the computer. The value (the result of <em>evaluation</em>) of the last expression in each cell, <code>15</code> in this case, is displayed below the cell.</p>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">3</span> <span class="o">*</span> <span class="mi">5</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>15
-</code></pre></div>      </div>
-
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<p>Here, we will compute the number of seconds in an hour, and a day, and place the results in variables named, “secondsperhour” and “secondsperday”</p>
+<div class="jb_cell">
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">secondsperhour</span><span class="o">=</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"The number of seconds in an hour is: "</span><span class="p">,</span> <span class="n">secondsperhour</span><span class="p">)</span>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span> <span class="o">*</span> <span class="mi">5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>15</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here, we will compute the number of seconds in an hour, and a day, and place the results in variables named, "secondsperhour" and "secondsperday"</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">secondsperhour</span><span class="o">=</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of seconds in an hour is: &quot;</span><span class="p">,</span> <span class="n">secondsperhour</span><span class="p">)</span>
 <span class="n">secondsperday</span> <span class="o">=</span><span class="n">secondsperhour</span><span class="o">*</span><span class="mi">24</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"The number of seconds in a day is: "</span><span class="p">,</span> <span class="n">secondsperday</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number of seconds in a day is: &quot;</span><span class="p">,</span> <span class="n">secondsperday</span><span class="p">)</span>
+</pre></div>
 
-</code></pre></div>    </div>
-  </div>
+    </div>
+</div>
+</div>
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
-      <div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The number of seconds in an hour is:  3600
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number of seconds in an hour is:  3600
 The number of seconds in a day is:  86400
-</code></pre></div>      </div>
-    </div>
-  </div>
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<p>Engineering relies upon a sequence of multiplications of ratios, called “Dimensional Analysis”, to convert quantities from one unit of measurement to another. As an example, convert miles per hour to feet per second.</p>
-
-<p>Visually,  <script type="math/tex">{ feet \over second} = { miles \over hour} * { 1 hour \over 3,600 seconds} * {5,280 feet \over 1 mile}</script></p>
-
-<p>Note that <script type="math/tex">{hour \over seconds} = {1 \over secondsperhour}</script></p>
-
-<p>So,  60 miles/hour * hour/second * feet/mile = feet/second, calculated by:</p>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">feetpersecond</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">secondsperhour</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5280</span>
-<span class="k">print</span><span class="p">(</span><span class="n">feetpersecond</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-      <div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>88.0
-</code></pre></div>      </div>
-    </div>
-  </div>
+</div>
 </div>
 
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Engineering relies upon a sequence of multiplications of ratios, called "Dimensional Analysis", to convert quantities from one unit of measurement to another. As an example, convert miles per hour to feet per second.</p>
+<p>Visually,  $${ feet \over second} = { miles \over hour} * { 1 hour \over 3,600 seconds} * {5,280 feet \over 1 mile}$$</p>
+<p>Note that $${hour \over seconds} = {1 \over secondsperhour}$$</p>
+<p>So,  60 miles/hour <em> hour/second </em> feet/mile = feet/second, calculated by:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">feetpersecond</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">secondsperhour</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5280</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">feetpersecond</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>88.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>For our calculation of how much organic material is removed from the influent by our system, we need to know what mass of organic material is moving through the system in an hour, or a day.</p>
-
 <p>Measuring the influent load of digestible material in milligrams per Liter, or mg/L, the 350.1 standard gives a possible influent value as 300 mg/L of TSS.</p>
-
 <p>Given a flow rate in gallon per hour = gph,</p>
-
 <p>Convert gallons per hour to milligrams of material conveyed each hour using the Total Suspended Solids influent level, (or, alternatively, the BOD5 number) in mg/L.  Using 300 mg/L,</p>
+<p>milligrams / hour = gallons/hour  <em>  3.7854 L /gallon </em>  300mg / L</p>
+<p>$${ mg \over hour} = { gallons \over hour} * {3.784  Liters \over  1 gallons} * {300 mg \over Liter}$$</p>
 
-<p>milligrams / hour = gallons/hour  *  3.7854 L /gallon *  300mg / L</p>
+<pre><code>- Conversion of gallons to liters: 3.7854 L in a gallon;</code></pre>
 
-<script type="math/tex; mode=display">{ mg \over hour} = { gallons \over hour} * {3.784  Liters \over  1 gallons} * {300 mg \over Liter}</script>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Conversion of gallons to liters: 3.7854 L in a gallon;
-</code></pre></div></div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gallonperhour</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">mgperhour</span> <span class="o">=</span> <span class="n">gallonperhour</span> <span class="o">*</span> <span class="mf">3.7854</span> <span class="o">*</span> <span class="mi">300</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Milligrams per hour"</span><span class="p">,</span><span class="n">mgperhour</span><span class="p">)</span>
-<span class="n">gramperhour</span><span class="o">=</span><span class="n">mgperhour</span><span class="o">/</span><span class="mi">1000</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Grams per hour"</span><span class="p">,</span><span class="n">gramperhour</span> <span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-      <div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Milligrams per hour 113562.0
-Grams per hour 113.562
-</code></pre></div>      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gallonperhour</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">mgperhour</span> <span class="o">=</span> <span class="n">gallonperhour</span> <span class="o">*</span> <span class="mf">3.7854</span> <span class="o">*</span> <span class="mi">300</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Milligrams per hour&quot;</span><span class="p">,</span><span class="n">mgperhour</span><span class="p">)</span>
+<span class="n">gramperhour</span><span class="o">=</span><span class="n">mgperhour</span><span class="o">/</span><span class="mi">1000</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grams per hour&quot;</span><span class="p">,</span><span class="n">gramperhour</span> <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Milligrams per hour 113562.0
+Grams per hour 113.562
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>The 350.1 standard requires reducing TSS from 300 mg/L to 10 mg/L, or by a factor of 30.</p>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">finalTSS</span> <span class="o">=</span> <span class="n">gramperhour</span><span class="o">/</span><span class="mi">30</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"Final TSS we must demonstrate: "</span><span class="p">,</span><span class="n">finalTSS</span><span class="p">,</span> <span class="s">"grams per hour of TSS in effluent, or 10 mg/L in a grab test"</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-      <div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Final TSS we must demonstrate:  3.7854 grams per hour of TSS in effluent, or 10 mg/L in a grab test
-</code></pre></div>      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<p><strong>Common Operators.</strong> Data science often involves combining numerical values, and the set of operators in a programming language are designed to so that expressions can be used to express any sort of arithmetic. In Python, the following operators are essential.</p>
+<div class="jb_cell">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">finalTSS</span> <span class="o">=</span> <span class="n">gramperhour</span><span class="o">/</span><span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final TSS we must demonstrate: &quot;</span><span class="p">,</span><span class="n">finalTSS</span><span class="p">,</span> <span class="s2">&quot;grams per hour of TSS in effluent, or 10 mg/L in a grab test&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Final TSS we must demonstrate:  3.7854 grams per hour of TSS in effluent, or 10 mg/L in a grab test
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Common Operators.</strong> Data science often involves combining numerical values, and the set of operators in a programming language are designed to so that expressions can be used to express any sort of arithmetic. In Python, the following operators are essential.</p>
 <table>
-  <thead>
-    <tr>
-      <th>Expression Type</th>
-      <th>Operator</th>
-      <th>Example</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Addition</td>
-      <td><code class="highlighter-rouge">+</code></td>
-      <td><code class="highlighter-rouge">2 + 3</code></td>
-      <td><code class="highlighter-rouge">5</code></td>
-    </tr>
-    <tr>
-      <td>Subtraction</td>
-      <td><code class="highlighter-rouge">-</code></td>
-      <td><code class="highlighter-rouge">2 - 3</code></td>
-      <td><code class="highlighter-rouge">-1</code></td>
-    </tr>
-    <tr>
-      <td>Multiplication</td>
-      <td><code class="highlighter-rouge">*</code></td>
-      <td><code class="highlighter-rouge">2 * 3</code></td>
-      <td><code class="highlighter-rouge">6</code></td>
-    </tr>
-    <tr>
-      <td>Division</td>
-      <td><code class="highlighter-rouge">/</code></td>
-      <td><code class="highlighter-rouge">7 / 3</code></td>
-      <td><code class="highlighter-rouge">2.66667</code></td>
-    </tr>
-    <tr>
-      <td>Remainder</td>
-      <td><code class="highlighter-rouge">%</code></td>
-      <td><code class="highlighter-rouge">7 % 3</code></td>
-      <td><code class="highlighter-rouge">1</code></td>
-    </tr>
-    <tr>
-      <td>Exponentiation</td>
-      <td><code class="highlighter-rouge">**</code></td>
-      <td><code class="highlighter-rouge">2 ** 0.5</code></td>
-      <td><code class="highlighter-rouge">1.41421</code></td>
-    </tr>
-  </tbody>
+<thead><tr>
+<th>Expression Type</th>
+<th>Operator</th>
+<th>Example</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Addition</td>
+<td><code>+</code></td>
+<td><code>2 + 3</code></td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td>Subtraction</td>
+<td><code>-</code></td>
+<td><code>2 - 3</code></td>
+<td><code>-1</code></td>
+</tr>
+<tr>
+<td>Multiplication</td>
+<td><code>*</code></td>
+<td><code>2 * 3</code></td>
+<td><code>6</code></td>
+</tr>
+<tr>
+<td>Division</td>
+<td><code>/</code></td>
+<td><code>7 / 3</code></td>
+<td><code>2.66667</code></td>
+</tr>
+<tr>
+<td>Remainder</td>
+<td><code>%</code></td>
+<td><code>7 % 3</code></td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td>Exponentiation</td>
+<td><code>**</code></td>
+<td><code>2 ** 0.5</code></td>
+<td><code>1.41421</code></td>
+</tr>
+</tbody>
 </table>
 
-<p>Python expressions obey the same familiar rules of <em>precedence</em> as in algebra: multiplication and division occur before addition and subtraction. Parentheses can be used to group together smaller expressions within a larger expression.</p>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="c">#import datascience as ds</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s">'precision'</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="c"># This option stops scientific notation for pandas</span>
-<span class="c"># pd.set_option('display.float_format', '{:.2f}'.format)</span>
-
-</code></pre></div>    </div>
-  </div>
-
+</div>
+</div>
+</div>
 </div>
 
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Python expressions obey the same familiar rules of <em>precedence</em> as in algebra: multiplication and division occur before addition and subtraction. Parentheses can be used to group together smaller expressions within a larger expression.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="c1">#import datascience as ds</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_rows</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">max_columns</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="c1"># This option stops scientific notation for pandas</span>
+<span class="c1"># pd.set_option(&#39;display.float_format&#39;, &#39;{:.2f}&#39;.format)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Energy calculation: UCB; 471,282 MWh/year = 1300 MWh/day or 54 MWh/hour</p>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mwhy</span><span class="o">=</span><span class="mi">471282</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mwhy</span><span class="o">=</span><span class="mi">471282</span>
 <span class="n">mwhmo</span> <span class="o">=</span> <span class="n">mwhy</span><span class="o">/</span><span class="mi">12</span>
 <span class="n">mwhwk</span> <span class="o">=</span> <span class="n">mwhy</span> <span class="o">/</span><span class="mi">52</span>
 <span class="n">mwhday</span> <span class="o">=</span> <span class="n">mwhy</span> <span class="o">/</span> <span class="mf">365.2422</span>
 <span class="n">mwhhour</span> <span class="o">=</span> <span class="n">mwhday</span> <span class="o">/</span> <span class="mi">24</span>
 <span class="n">berkeleypower</span> <span class="o">=</span> <span class="p">[</span><span class="n">mwhy</span><span class="p">,</span><span class="n">mwhmo</span><span class="p">,</span><span class="n">mwhwk</span><span class="p">,</span><span class="n">mwhday</span><span class="p">,</span> <span class="n">mwhhour</span><span class="p">]</span>
-<span class="k">print</span><span class="p">(</span><span class="n">berkeleypower</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">berkeleypower</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">berkeleypower</span>
                 <span class="p">)</span>
+</pre></div>
 
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-      <div class="output_stream highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[471282, 39273.5, 9063.115384615385, 1290.3273499064455, 53.76363957943523]
-</code></pre></div>      </div>
     </div>
-  </div>
+</div>
 </div>
 
-<p>This chapter introduces many types of expressions. Learning to program involves trying out everything you learn in combination, investigating the behavior of the computer. What happens if you divide by zero? What happens if you divide twice in a row? You don’t always need to ask an expert (or the Internet); many of these details can be discovered by trying them out yourself.</p>
+<div class="output_wrapper">
+<div class="output">
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#df1.applymap(lambda x: str(int(x)) if abs(x - int(x)) &lt; 1e-6 else str(round(x,2)))</span>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
 
-</code></pre></div>    </div>
-  </div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[471282, 39273.5, 9063.115384615385, 1290.3273499064455, 53.76363957943523]
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">export_csv</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span> <span class="p">(</span><span class="s">r'/tmp/energy.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c">#Don't forget to add '.csv' at the end of the path</span>
-
-</code></pre></div>    </div>
-  </div>
-
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="s">r'/tmp/energy.csv'</span><span class="p">)</span>
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This chapter introduces many types of expressions. Learning to program involves trying out everything you learn in combination, investigating the behavior of the computer. What happens if you divide by zero? What happens if you divide twice in a row? You don't always need to ask an expert (or the Internet); many of these details can be discovered by trying them out yourself.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#df1.applymap(lambda x: str(int(x)) if abs(x - int(x)) &lt; 1e-6 else str(round(x,2)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">export_csv</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;/tmp/energy.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1">#Don&#39;t forget to add &#39;.csv&#39; at the end of the path</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;/tmp/energy.csv&#39;</span><span class="p">)</span>
 <span class="n">df1</span>
+</pre></div>
 
-</code></pre></div>    </div>
-  </div>
+    </div>
+</div>
+</div>
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="output_wrapper">
+<div class="output">
 
-      <div class="output output_html">
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped="">
+<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1517,21 +1723,38 @@ Grams per hour 113.562
 </div>
 </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span><span class="p">[</span><span class="s">"Entity Name"</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</div>
+</div>
 
-</code></pre></div>    </div>
-  </div>
+<div class="jb_cell">
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0                   UCBerkeley
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="p">[</span><span class="s2">&quot;Entity Name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0                   UCBerkeley
 1                          LBL
 2             City of Berkeley
 3                COB Buildings
@@ -1551,46 +1774,77 @@ Grams per hour 113.562
 17                  Commercial
 18                  Industrial
 19    Berkeley School District
-Name: Entity Name, dtype: object
-</code></pre></div>      </div>
+Name: Entity Name, dtype: object</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Year&#39;</span><span class="p">:</span><span class="s1">&#39;MMBTUYear&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;Data Year&#39;</span><span class="p">:</span><span class="s1">&#39;Year&#39;</span><span class="p">,},</span> 
+                 <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
 
     </div>
-  </div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df1</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s">'Year'</span><span class="p">:</span><span class="s">'MMBTUYear'</span><span class="p">,</span>
-                          <span class="s">'Data Year'</span><span class="p">:</span><span class="s">'Year'</span><span class="p">,},</span> 
-                 <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">export_csv</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">to_csv</span> <span class="p">(</span><span class="s">r'/tmp/engwat.csv'</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="jb_cell">
 
-</code></pre></div>    </div>
-  </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">export_csv</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">to_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;/tmp/engwat.csv&#39;</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</div>
+</div>
 
-</code></pre></div>    </div>
-  </div>
+<div class="jb_cell">
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-      <div class="output output_html">
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped="">
+<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1678,25 +1932,39 @@ Name: Entity Name, dtype: object
 </div>
 </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">engwater</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="s">r'/tmp/engwat.csv'</span><span class="p">)</span>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">engwater</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;/tmp/engwat.csv&#39;</span><span class="p">)</span>
 <span class="n">engwater</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
 
 
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output output_html">
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped="">
+<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2356,22 +2624,39 @@ Name: Entity Name, dtype: object
 </div>
 </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">is2018</span><span class="o">=</span><span class="n">engwater</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="mf">2018.0</span>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">is2018</span><span class="o">=</span><span class="n">engwater</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mf">2018.0</span>
 <span class="n">is2018</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
 
-</code></pre></div>    </div>
-  </div>
+    </div>
+</div>
+</div>
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="output_wrapper">
+<div class="output">
 
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0     True
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0     True
 1     True
 2    False
 3    False
@@ -2381,26 +2666,41 @@ Name: Entity Name, dtype: object
 7    False
 8    False
 9    False
-Name: Year, dtype: bool
-</code></pre></div>      </div>
-
-    </div>
-  </div>
+Name: Year, dtype: bool</pre>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">engwater</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">is2018</span><span class="p">]</span>
+</div>
+</div>
+</div>
+</div>
 
-</code></pre></div>    </div>
-  </div>
+</div>
+</div>
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="jb_cell">
 
-      <div class="output output_html">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">engwater</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">is2018</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped="">
+<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2488,23 +2788,38 @@ Name: Year, dtype: bool
 </div>
 </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">engwater</span><span class="p">[</span><span class="n">engwater</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2019</span><span class="p">]</span>
+</div>
+</div>
 
-</code></pre></div>    </div>
-  </div>
+<div class="jb_cell">
 
-  <div class="output_wrapper">
-    <div class="output_subarea">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 
-      <div class="output output_html">
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">engwater</span><span class="p">[</span><span class="n">engwater</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2019</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style scoped="">
+<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2581,10 +2896,18 @@ Name: Year, dtype: bool
 </div>
 </div>
 
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
 
+</div>
+</div>
+
+ 
+
+
+</main>
 
             </div>
             <nav class="c-page__nav">
@@ -2598,7 +2921,7 @@ Name: Year, dtype: bool
   
     
     <a id="js-page__nav__next" class="c-page__nav__next" href="/h1/01/1/overview.html">
-      Design of Treatment Systems <span class="u-margin-right-tiny"></span> 〉
+      Overview of Distributed Treatment ... <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>
