@@ -1,5 +1,5 @@
 
-## Vendor Certifications
+## Vendor Standards Certifications
 
 Vendor | [ANSI 40](http://www.nsf.org/services/by-industry/water-wastewater/onsite-wastewater/residential-wastewater-treatment-systems) | ANSI 245  | ANSI 350.1
 :----- | :---:    | :---: | :---:
