@@ -1,8 +1,8 @@
 ---
 title: 'Why-research-platform'
 prev_page:
-  url: /01/2/statistical-techniques.html
-  title: 'Statistical-techniques'
+  url: /01/1/ww-datascience.html
+  title: 'WW-datascience'
 next_page:
   url: /01/3/biblio.html
   title: 'Biblio'

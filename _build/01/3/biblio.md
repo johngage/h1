@@ -4,8 +4,8 @@ prev_page:
   url: /01/3/why-research-platform.html
   title: 'Why-research-platform'
 next_page:
-  url: https://github.com/jupyter/jupyter-book
-  title: 'GitHub repository'
+  url: /01/4/statistical-techniques.html
+  title: 'Statistical-techniques'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 {% bibliography %}

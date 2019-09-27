@@ -19,8 +19,10 @@
 title: HH Treatment
 author: John Gage
 email: john.gage@gmail.com
-description: build HTML site now in _build?
-baseurl: /h1      # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+description: >-
+  build HTML site now in _build?
+
+baseurl: /h1             # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
 url: https://johngage.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 
@@ -88,6 +90,10 @@ scholar:
 # Navigate to https://analytics.google.com, add a new property for your jupyter book and copy the tracking id here.
 google_analytics:
   mytrackingcode: ''
+
+#######################################################################################
+# Jupyter book settings you probably don't need to change
+
 content_folder_name: content           # The folder where your raw content (notebooks/markdown files) are located
 images_url: /assets/images                   # Path to static image files
 css_url: /assets/css                      # Path to static CSS files
@@ -142,4 +148,4 @@ plugins:
 - jekyll-scholar
 
 # Jupyter Book version - DO NOT CHANGE THIS. It is generated when a new book is created
-jupyter_book_version: 0.6.1dev0
+jupyter_book_version: 0.6.2
