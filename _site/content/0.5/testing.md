@@ -1,6 +1,6 @@
 # Testing procedures
 
-## What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:
+## What are we testing for?  Decreased organic material. Usual sewage influent measures:
 
 
 | Test | CBOD5 | TSS |

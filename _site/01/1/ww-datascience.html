@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>WW-datascience</title>
-  <meta name="description" content="Data Science applied to Wastewater Engineering Data Science Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas...">
+  <meta name="description" content="Data Science applied to Wastewater EngineeringData Science  Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas...">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/h1/01/1/ww-datascience.html">
-  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="http://0.0.0.0:4000/h1/feed.xml">
+  <link rel="canonical" href="https://johngage.github.io/h1/01/1/ww-datascience.html">
+  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="https://johngage.github.io/h1/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/h1/01/1/ww-datascience.html" />
+  <meta property="og:url"         content="https://johngage.github.io/h1/01/1/ww-datascience.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="WW-datascience" />
-<meta property="og:description" content="Data Science applied to Wastewater Engineering Data Science Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas..." />
-<meta property="og:image"       content="http://0.0.0.0:4000/h1/images/logo/logo.png" />
+<meta property="og:description" content="Data Science applied to Wastewater EngineeringData Science  Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas..." />
+<meta property="og:image"       content="https://johngage.github.io/h1/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://0.0.0.0:4000/h1/01/1/ww-datascience.html",
+  "mainEntityOfPage": "https://johngage.github.io/h1/01/1/ww-datascience.html",
   "headline": "WW-datascience",
-  "datePublished": "2019-09-26T15:11:37-05:00",
-  "dateModified": "2019-09-26T15:11:37-05:00",
-  "description": "Data Science applied to Wastewater Engineering Data Science Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas...",
+  "datePublished": "2019-09-27T11:20:19-07:00",
+  "dateModified": "2019-09-27T11:20:19-07:00",
+  "description": "Data Science applied to Wastewater EngineeringData Science  Systematic techniques to draw useful conclusions from large and diverse datasets. Four main areas...",
   "author": {
     "@type": "Person",
     "name": "John Gage"
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/h1",
+      "url": "https://johngage.github.io/h1",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/h1",
+    "url": "https://johngage.github.io/h1",
     "height": 60,
     "width": 60
   }
@@ -53,7 +53,8 @@
 
   </script>
   <link rel="stylesheet" href="/h1/assets/css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/regular.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.css">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -87,26 +88,12 @@ MathJax.Hub.Config({
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
 
-  <!-- DOM updating function -->
-  <script>
-const runWhenDOMLoaded = cb => {
-  if (document.readyState != 'loading') {
-    cb()
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', cb)
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState == 'complete') cb()
-    })
-  }
-}
 
-// Helper function to init things quickly
-initFunction = function(myfunc) {
-  runWhenDOMLoaded(myfunc);
-  document.addEventListener('turbolinks:load', myfunc);
-};
-</script>
+  <!-- DOM updating function -->
+  <script src="/h1/assets/js/dom-update.js"></script>
+
+  <!-- Selectors for elements on the page -->
+  <script src="/h1/assets/js/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
@@ -115,62 +102,12 @@ initFunction = function(myfunc) {
 
   <!-- Add AnchorJS to let headers be linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script>
-const initAnchors = () => {
-  if (window.anchors === undefined) {
-    setTimeout(initAnchors, 250)
-    return
-  }
-  anchors.add("main h1, main h2, main h3, main h4")
-}
-
-initFunction(initAnchors);
-</script>
-
+  <script src="/h1/assets/js/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
-
-  <!-- Selectors for elements on the page -->
-  <script>
-/**
- * Select various elements on the page for later use
- */
-
-// IDs we'll attach to cells
-const codeCellId = index => `codecell${index}`
-const inputCellId = index => `inputcell${index}`
-
-pageElements = {}
-
-// All code cells
-findCodeCells = function() {
-    var codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre, div.text_cell_render div.highlight pre')
-    pageElements['codeCells'] = codeCells;
-
-    codeCells.forEach((codeCell, index) => {
-      const id = codeCellId(index)
-      codeCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findCodeCells);
-
-// All cells in general
-findInputCells = function() {
-    var inputCells = document.querySelectorAll('div.jb_cell')
-    pageElements['inputCells'] = inputCells;
-
-    inputCells.forEach((inputCell, index) => {
-        const id = inputCellId(index)
-        inputCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findInputCells);
-</script>
 
   <!-- Load nbinteract for widgets -->
   
@@ -289,6 +226,13 @@ initFunction(addThebelabButtonToCodeCells);
             outputs.forEach((output, index) => {
                 output.remove();
             });
+
+            // Find any cells with an initialization tag and ask ThebeLab to run them when ready
+            var thebeInitCells = document.querySelectorAll('div.tag_thebelab-init');
+            thebeInitCells.forEach((cell) => {
+                console.log("Initializing ThebeLab with cell: " + cell.id);
+                cell.querySelector('.thebelab-run-button').click();
+            });
         }
 
         // Add event listener for the function to modify code cells
@@ -308,38 +252,9 @@ initFunction(addThebelabButtonToCodeCells);
 
 
 
-  <!-- Load the auto-generating TOC -->
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
-<script>
-const initToc = () => {
-  if (window.tocbot === undefined) {
-    setTimeout(initToc, 250)
-    return
-  }
-
-  // Check whether we have any sidebar content. If not, then show the sidebar earlier.
-  var SIDEBAR_CONTENT_TAGS = ['.tag_full_width', '.tag_popout'];
-  var sidebar_content_query = SIDEBAR_CONTENT_TAGS.join(', ')
-  if (document.querySelectorAll(sidebar_content_query).length === 0) {
-    document.querySelector('nav.onthispage').classList.add('no_sidebar_content')
-  }
-
-  // Initialize the TOC bot
-  tocbot.init({
-    tocSelector: 'nav.onthispage',
-    contentSelector: '.c-textbook__content',
-    headingSelector: 'h2, h3',
-    orderedList: false,
-    collapseDepth: 6,
-    listClass: 'toc__menu',
-    activeListItemClass: "",  // Not using
-    activeLinkClass: "", // Not using
-  });
-
-}
-initFunction(initToc);
-</script>
-
+  <script src="/h1/assets/js/tocbot.js"></script>
 
   <!-- Google analytics -->
   
@@ -457,147 +372,10 @@ initFunction(initQuery);
 </script>
 
   <!-- Load JS that depends on site variables -->
-  <script>
-/**
- * Set up copy/paste for code blocks
- */
-const clipboardButton = id =>
-  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/h1/assets/images/copy-button.svg" alt="Copy to clipboard">
-  </a>`
-
-// Clears selected text since ClipboardJS will select the text when copying
-const clearSelection = () => {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
-// Changes tooltip text for two seconds, then changes it back
-const temporarilyChangeTooltip = (el, newText) => {
-  const oldText = el.getAttribute('data-tooltip')
-  el.setAttribute('data-tooltip', newText)
-  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
-}
-
-const addCopyButtonToCodeCells = () => {
-  // If ClipboardJS hasn't loaded, wait a bit and try again. This
-  // happens because we load ClipboardJS asynchronously.
-  if (window.ClipboardJS === undefined) {
-    setTimeout(addCopyButtonToCodeCells, 250)
-    return
-  }
-
-  pageElements['codeCells'].forEach((codeCell) => {
-    const id = codeCell.getAttribute('id')
-    if (document.getElementById("copy-button" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
-    }
-  })
-
-  const clipboard = new ClipboardJS('.copybtn')
-  clipboard.on('success', event => {
-    clearSelection()
-    temporarilyChangeTooltip(event.trigger, 'Copied!')
-  })
-
-  clipboard.on('error', event => {
-    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
-  })
-
-  // Get rid of clipboard before the next page visit to avoid memory leak
-  document.addEventListener('turbolinks:before-visit', () =>
-    clipboard.destroy()
-  )
-}
-
-initFunction(addCopyButtonToCodeCells);
-</script>
-
+  <script src="/h1/assets/js/copy-button.js" async></script>
 
   <!-- Hide cell code -->
-  <script>
-    /**
-    Add buttons to hide code cells
-    */
-
-
-    var setCodeCellVisibility = function (inputField, kind) {
-        // Update the image and class for hidden
-        var id = inputField.getAttribute('data-id');
-        var codeCell = document.querySelector(`#${id} div.highlight`);
-
-        if (kind === "visible") {
-            codeCell.classList.remove('hidden');
-            inputField.checked = true;
-        } else {
-            codeCell.classList.add('hidden');
-            inputField.checked = false;
-        }
-    }
-
-    var toggleCodeCellVisibility = function (event) {
-        // The label is clicked, and now we decide what to do based on the input field's clicked status
-        if (event.target.tagName === "LABEL") {
-            var inputField = event.target.previousElementSibling;
-        } else {
-            // It is the span inside the target
-            var inputField = event.target.parentElement.previousElementSibling;
-        }
-
-        if (inputField.checked === true) {
-            setCodeCellVisibility(inputField, "visible");
-        } else {
-            setCodeCellVisibility(inputField, "hidden");
-        }
-    }
-
-
-    // Button constructor
-    const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
-
-    var addHideButton = function () {
-        // If a hide button is already added, don't add another
-        if (document.querySelector('div.tag_hide_input input') !== null) {
-            return;
-        }
-
-        // Find the input cells and add a hide button
-        pageElements['inputCells'].forEach(function (inputCell) {
-            if (!inputCell.classList.contains("tag_hide_input")) {
-                // Skip the cell if it doesn't have a hidecode class
-                return;
-            }
-
-            const id = inputCell.getAttribute('id')
-
-            // Insert the button just inside the end of the next div
-            inputCell.querySelector('div.input').insertAdjacentHTML('beforeend', hideCodeButton(id))
-
-            // Set up the visibility toggle
-            hideLink = document.querySelector(`#${id} div.inner_cell + input + label`);
-            hideLink.addEventListener('click', toggleCodeCellVisibility)
-        });
-    }
-
-
-    // Initialize the hide buttos
-    var initHiddenCells = function () {
-        // Add hide buttons to the cells
-        addHideButton();
-
-        // Toggle the code cells that should be hidden
-        document.querySelectorAll('div.tag_hide_input input').forEach(function (item) {
-            setCodeCellVisibility(item, 'hidden');
-            item.checked = true;
-        })
-    }
-
-    initFunction(initHiddenCells);
-
-</script>
+  <script src="/h1/assets/js/hide-cell.js" async></script>
 
   <!-- Printing the screen -->
   <!-- Include nbinteract for interactive widgets -->
@@ -746,7 +524,7 @@ initFunction(initPrint)
           href="/h1/01/1/overview.html"
         >
           
-          Design of Treatment Systems
+          Overview of Distributed Treatment Systems
         </a>
 
         
@@ -768,7 +546,7 @@ initFunction(initPrint)
                   href="/h1/01/1/waste-treatment-design.html"
                 >
                   
-                  Waste-treatment-design
+                  Designing Distributed Treatment Systems
                 </a>
 
                 
@@ -785,7 +563,7 @@ initFunction(initPrint)
                   href="/h1/01/1/ww-datascience.html"
                 >
                   
-                  WW-datascience
+                  Data Science for Waste Water Engineering
                 </a>
 
                 
@@ -802,7 +580,7 @@ initFunction(initPrint)
                   href="/h1/01/3/why-research-platform.html"
                 >
                   
-                  Why-research-platform
+                  RedHorse Constructors Research Platform
                 </a>
 
                 
@@ -998,20 +776,10 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><i class="fa fa-download"></i></button>
     <div class="download-buttons">
-        <a href="/h1/content/01/1/ww-datascience.md" download>
-        <button id="interact-button-download" class="interact-button">ORIG</button>
-        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">PDF</button></a>
     </div>
 </div>
-
-  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
-
-  
-  
-  
-
 
 </div>
 
@@ -1027,33 +795,29 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="jb_cell">
+              <h1 id="data-science-applied-to-wastewater-engineering">Data Science applied to Wastewater Engineering</h1>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Data-Science-applied-to-Wastewater-Engineering">Data Science applied to Wastewater Engineering<a class="anchor-link" href="#Data-Science-applied-to-Wastewater-Engineering"> </a></h1><h2 id="Data-Science">Data Science<a class="anchor-link" href="#Data-Science"> </a></h2><ul>
-<li>Systematic techniques to draw useful conclusions from large and diverse data
+<h2 id="data-science">Data Science</h2>
+<ul>
+  <li>Systematic techniques to draw useful conclusions from large and diverse data
 sets. Four main areas: <strong>analytic model design</strong>,  <strong>exploration</strong>, <strong>prediction</strong>, and <strong>inference</strong>.</li>
 </ul>
-<h2 id="Wastewater-Data-Science">Wastewater Data Science<a class="anchor-link" href="#Wastewater-Data-Science"> </a></h2><ul>
-<li><strong>Model design</strong>: builds mathematical models of each element of a coupled system: physical, chemical, hydrodynamical and biological.
-Uses methods of numerical linear algebra, differential equations, and chemical and mechanical engineering.</li>
-<li><strong>Exploration</strong>: Acquires empirical data from operating waste water treatment systems. Used to calibrate and refine analytical models of actual operating systems, and for day-to-day operations and maintenance.</li>
-</ul>
-<p>Exploration of these data sets depends upon rapid visualization, coupled with  descriptive statistics drawn from data sets to build and refine intuition about actual functional relationships, e.g., between pH, alkalinity, temperature, and biomass formation.</p>
+
+<h2 id="wastewater-data-science">Wastewater Data Science</h2>
 <ul>
-<li><strong>Prediction</strong> depends on executing models of the systems, coupled with machine learning techniques applied to actual data sets to calibrate the analytics.  Optimization techiques are applied in this adaptive model allow dynamic improvement.</li>
-<li><strong>Inference</strong> from observed data allows accurate estimation of probabilities and error bars.</li>
+  <li><strong>Model design</strong>: builds mathematical models of each element of a coupled system: physical, chemical, hydrodynamical and biological.
+Uses methods of numerical linear algebra, differential equations, and chemical and mechanical engineering.</li>
+  <li><strong>Exploration</strong>: Acquires empirical data from operating waste water treatment systems. Used to calibrate and refine analytical models of actual operating systems, and for day-to-day operations and maintenance.</li>
 </ul>
+
+<p>Exploration of these data sets depends upon rapid visualization, coupled with  descriptive statistics drawn from data sets to build and refine intuition about actual functional relationships, e.g., between pH, alkalinity, temperature, and biomass formation.</p>
+
+<ul>
+  <li><strong>Prediction</strong> depends on executing models of the systems, coupled with machine learning techniques applied to actual data sets to calibrate the analytics.  Optimization techiques are applied in this adaptive model allow dynamic improvement.</li>
+  <li><strong>Inference</strong> from observed data allows accurate estimation of probabilities and error bars.</li>
+</ul>
+
 <p>This book describes the aspects of waste water engineering applicable to non-sewered sanitation systems: new toilet systems, new septic tank processing technologies, sludge processing and reclamation of nutrients and new testing and monitoring technologies. New techniques include biome specification utilising antibody probes, polymerase chain reaction genetic analysis, and multi-site Affymetric species identification.</p>
-
-</div>
-</div>
-</div>
-</div>
-
- 
-
 
             </div>
             <nav class="c-page__nav">

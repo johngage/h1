@@ -38,16 +38,16 @@
     url: /0.5/ExpressionsAndUnits
     not_numbered: true
 
-- title: Design of Treatment Systems
+- title: Overview of Distributed Treatment Systems
   url: /01/1/overview
   not_numbered: true
   expand_sections: true
   sections:
-  - title: Waste-treatment-design
+  - title: Designing Distributed Treatment Systems
     url: /01/1/waste-treatment-design
-  - title: WW-datascience
+  - title: Data Science for Waste Water Engineering
     url: /01/1/ww-datascience
-  - title: Why-research-platform
+  - title: RedHorse Constructors Research Platform
     url: /01/3/why-research-platform
   - title: Biblio
     url: /01/3/biblio

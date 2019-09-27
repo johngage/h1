@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Home</title>
-  <meta name="description" content="RedHorse Constructor Waste Water Treatment Design for non-sewered systems Household Treatment Systems: design, construction, operation, and maintenance with ...">
+  <meta name="description" content="RedHorse ConstructorWaste Water Treatment Design for non-sewered systemsHousehold Treatment Systems: design, construction, operation, and maintenance with re...">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/h1/0.5/intro1.html">
-  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="http://0.0.0.0:4000/h1/feed.xml">
+  <link rel="canonical" href="https://johngage.github.io/h1/0.5/intro1.html">
+  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="https://johngage.github.io/h1/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/h1/0.5/intro1.html" />
+  <meta property="og:url"         content="https://johngage.github.io/h1/0.5/intro1.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Home" />
-<meta property="og:description" content="RedHorse Constructor Waste Water Treatment Design for non-sewered systems Household Treatment Systems: design, construction, operation, and maintenance with ..." />
-<meta property="og:image"       content="http://0.0.0.0:4000/h1/images/logo/logo.png" />
+<meta property="og:description" content="RedHorse ConstructorWaste Water Treatment Design for non-sewered systemsHousehold Treatment Systems: design, construction, operation, and maintenance with re..." />
+<meta property="og:image"       content="https://johngage.github.io/h1/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://0.0.0.0:4000/h1/0.5/intro1.html",
+  "mainEntityOfPage": "https://johngage.github.io/h1/0.5/intro1.html",
   "headline": "Home",
-  "datePublished": "2019-09-26T15:11:37-05:00",
-  "dateModified": "2019-09-26T15:11:37-05:00",
-  "description": "RedHorse Constructor Waste Water Treatment Design for non-sewered systems Household Treatment Systems: design, construction, operation, and maintenance with ...",
+  "datePublished": "2019-09-27T11:20:19-07:00",
+  "dateModified": "2019-09-27T11:20:19-07:00",
+  "description": "RedHorse ConstructorWaste Water Treatment Design for non-sewered systemsHousehold Treatment Systems: design, construction, operation, and maintenance with re...",
   "author": {
     "@type": "Person",
     "name": "John Gage"
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/h1",
+      "url": "https://johngage.github.io/h1",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/h1",
+    "url": "https://johngage.github.io/h1",
     "height": 60,
     "width": 60
   }
@@ -53,7 +53,8 @@
 
   </script>
   <link rel="stylesheet" href="/h1/assets/css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/regular.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.css">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -87,26 +88,12 @@ MathJax.Hub.Config({
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
 
-  <!-- DOM updating function -->
-  <script>
-const runWhenDOMLoaded = cb => {
-  if (document.readyState != 'loading') {
-    cb()
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', cb)
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState == 'complete') cb()
-    })
-  }
-}
 
-// Helper function to init things quickly
-initFunction = function(myfunc) {
-  runWhenDOMLoaded(myfunc);
-  document.addEventListener('turbolinks:load', myfunc);
-};
-</script>
+  <!-- DOM updating function -->
+  <script src="/h1/assets/js/dom-update.js"></script>
+
+  <!-- Selectors for elements on the page -->
+  <script src="/h1/assets/js/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
@@ -115,62 +102,12 @@ initFunction = function(myfunc) {
 
   <!-- Add AnchorJS to let headers be linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script>
-const initAnchors = () => {
-  if (window.anchors === undefined) {
-    setTimeout(initAnchors, 250)
-    return
-  }
-  anchors.add("main h1, main h2, main h3, main h4")
-}
-
-initFunction(initAnchors);
-</script>
-
+  <script src="/h1/assets/js/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
-
-  <!-- Selectors for elements on the page -->
-  <script>
-/**
- * Select various elements on the page for later use
- */
-
-// IDs we'll attach to cells
-const codeCellId = index => `codecell${index}`
-const inputCellId = index => `inputcell${index}`
-
-pageElements = {}
-
-// All code cells
-findCodeCells = function() {
-    var codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre, div.text_cell_render div.highlight pre')
-    pageElements['codeCells'] = codeCells;
-
-    codeCells.forEach((codeCell, index) => {
-      const id = codeCellId(index)
-      codeCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findCodeCells);
-
-// All cells in general
-findInputCells = function() {
-    var inputCells = document.querySelectorAll('div.jb_cell')
-    pageElements['inputCells'] = inputCells;
-
-    inputCells.forEach((inputCell, index) => {
-        const id = inputCellId(index)
-        inputCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findInputCells);
-</script>
 
   <!-- Load nbinteract for widgets -->
   
@@ -289,6 +226,13 @@ initFunction(addThebelabButtonToCodeCells);
             outputs.forEach((output, index) => {
                 output.remove();
             });
+
+            // Find any cells with an initialization tag and ask ThebeLab to run them when ready
+            var thebeInitCells = document.querySelectorAll('div.tag_thebelab-init');
+            thebeInitCells.forEach((cell) => {
+                console.log("Initializing ThebeLab with cell: " + cell.id);
+                cell.querySelector('.thebelab-run-button').click();
+            });
         }
 
         // Add event listener for the function to modify code cells
@@ -308,38 +252,9 @@ initFunction(addThebelabButtonToCodeCells);
 
 
 
-  <!-- Load the auto-generating TOC -->
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
-<script>
-const initToc = () => {
-  if (window.tocbot === undefined) {
-    setTimeout(initToc, 250)
-    return
-  }
-
-  // Check whether we have any sidebar content. If not, then show the sidebar earlier.
-  var SIDEBAR_CONTENT_TAGS = ['.tag_full_width', '.tag_popout'];
-  var sidebar_content_query = SIDEBAR_CONTENT_TAGS.join(', ')
-  if (document.querySelectorAll(sidebar_content_query).length === 0) {
-    document.querySelector('nav.onthispage').classList.add('no_sidebar_content')
-  }
-
-  // Initialize the TOC bot
-  tocbot.init({
-    tocSelector: 'nav.onthispage',
-    contentSelector: '.c-textbook__content',
-    headingSelector: 'h2, h3',
-    orderedList: false,
-    collapseDepth: 6,
-    listClass: 'toc__menu',
-    activeListItemClass: "",  // Not using
-    activeLinkClass: "", // Not using
-  });
-
-}
-initFunction(initToc);
-</script>
-
+  <script src="/h1/assets/js/tocbot.js"></script>
 
   <!-- Google analytics -->
   
@@ -457,147 +372,10 @@ initFunction(initQuery);
 </script>
 
   <!-- Load JS that depends on site variables -->
-  <script>
-/**
- * Set up copy/paste for code blocks
- */
-const clipboardButton = id =>
-  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/h1/assets/images/copy-button.svg" alt="Copy to clipboard">
-  </a>`
-
-// Clears selected text since ClipboardJS will select the text when copying
-const clearSelection = () => {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
-// Changes tooltip text for two seconds, then changes it back
-const temporarilyChangeTooltip = (el, newText) => {
-  const oldText = el.getAttribute('data-tooltip')
-  el.setAttribute('data-tooltip', newText)
-  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
-}
-
-const addCopyButtonToCodeCells = () => {
-  // If ClipboardJS hasn't loaded, wait a bit and try again. This
-  // happens because we load ClipboardJS asynchronously.
-  if (window.ClipboardJS === undefined) {
-    setTimeout(addCopyButtonToCodeCells, 250)
-    return
-  }
-
-  pageElements['codeCells'].forEach((codeCell) => {
-    const id = codeCell.getAttribute('id')
-    if (document.getElementById("copy-button" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
-    }
-  })
-
-  const clipboard = new ClipboardJS('.copybtn')
-  clipboard.on('success', event => {
-    clearSelection()
-    temporarilyChangeTooltip(event.trigger, 'Copied!')
-  })
-
-  clipboard.on('error', event => {
-    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
-  })
-
-  // Get rid of clipboard before the next page visit to avoid memory leak
-  document.addEventListener('turbolinks:before-visit', () =>
-    clipboard.destroy()
-  )
-}
-
-initFunction(addCopyButtonToCodeCells);
-</script>
-
+  <script src="/h1/assets/js/copy-button.js" async></script>
 
   <!-- Hide cell code -->
-  <script>
-    /**
-    Add buttons to hide code cells
-    */
-
-
-    var setCodeCellVisibility = function (inputField, kind) {
-        // Update the image and class for hidden
-        var id = inputField.getAttribute('data-id');
-        var codeCell = document.querySelector(`#${id} div.highlight`);
-
-        if (kind === "visible") {
-            codeCell.classList.remove('hidden');
-            inputField.checked = true;
-        } else {
-            codeCell.classList.add('hidden');
-            inputField.checked = false;
-        }
-    }
-
-    var toggleCodeCellVisibility = function (event) {
-        // The label is clicked, and now we decide what to do based on the input field's clicked status
-        if (event.target.tagName === "LABEL") {
-            var inputField = event.target.previousElementSibling;
-        } else {
-            // It is the span inside the target
-            var inputField = event.target.parentElement.previousElementSibling;
-        }
-
-        if (inputField.checked === true) {
-            setCodeCellVisibility(inputField, "visible");
-        } else {
-            setCodeCellVisibility(inputField, "hidden");
-        }
-    }
-
-
-    // Button constructor
-    const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
-
-    var addHideButton = function () {
-        // If a hide button is already added, don't add another
-        if (document.querySelector('div.tag_hide_input input') !== null) {
-            return;
-        }
-
-        // Find the input cells and add a hide button
-        pageElements['inputCells'].forEach(function (inputCell) {
-            if (!inputCell.classList.contains("tag_hide_input")) {
-                // Skip the cell if it doesn't have a hidecode class
-                return;
-            }
-
-            const id = inputCell.getAttribute('id')
-
-            // Insert the button just inside the end of the next div
-            inputCell.querySelector('div.input').insertAdjacentHTML('beforeend', hideCodeButton(id))
-
-            // Set up the visibility toggle
-            hideLink = document.querySelector(`#${id} div.inner_cell + input + label`);
-            hideLink.addEventListener('click', toggleCodeCellVisibility)
-        });
-    }
-
-
-    // Initialize the hide buttos
-    var initHiddenCells = function () {
-        // Add hide buttons to the cells
-        addHideButton();
-
-        // Toggle the code cells that should be hidden
-        document.querySelectorAll('div.tag_hide_input input').forEach(function (item) {
-            setCodeCellVisibility(item, 'hidden');
-            item.checked = true;
-        })
-    }
-
-    initFunction(initHiddenCells);
-
-</script>
+  <script src="/h1/assets/js/hide-cell.js" async></script>
 
   <!-- Printing the screen -->
   <!-- Include nbinteract for interactive widgets -->
@@ -746,7 +524,7 @@ initFunction(initPrint)
           href="/h1/01/1/overview.html"
         >
           
-          Design of Treatment Systems
+          Overview of Distributed Treatment Systems
         </a>
 
         
@@ -768,7 +546,7 @@ initFunction(initPrint)
                   href="/h1/01/1/waste-treatment-design.html"
                 >
                   
-                  Waste-treatment-design
+                  Designing Distributed Treatment Systems
                 </a>
 
                 
@@ -785,7 +563,7 @@ initFunction(initPrint)
                   href="/h1/01/1/ww-datascience.html"
                 >
                   
-                  WW-datascience
+                  Data Science for Waste Water Engineering
                 </a>
 
                 
@@ -802,7 +580,7 @@ initFunction(initPrint)
                   href="/h1/01/3/why-research-platform.html"
                 >
                   
-                  Why-research-platform
+                  RedHorse Constructors Research Platform
                 </a>
 
                 
@@ -998,20 +776,10 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><i class="fa fa-download"></i></button>
     <div class="download-buttons">
-        <a href="/h1/content/0.5/intro1.md" download>
-        <button id="interact-button-download" class="interact-button">ORIG</button>
-        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">PDF</button></a>
     </div>
 </div>
-
-  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
-
-  
-  
-  
-
 
 </div>
 
@@ -1027,60 +795,76 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="jb_cell">
+              <h2 id="redhorse-constructor">RedHorse Constructor</h2>
+<h1 id="waste-water-treatment-design-for-non-sewered-systems">Waste Water Treatment Design for non-sewered systems</h1>
+<h2 id="household-treatment-systems-design-construction-operation-and-maintenance-with-real-time-controls">Household Treatment Systems: design, construction, operation, and maintenance with real-time controls</h2>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="RedHorse-Constructor">RedHorse Constructor<a class="anchor-link" href="#RedHorse-Constructor"> </a></h2><h1 id="Waste-Water-Treatment-Design-for-non-sewered-systems">Waste Water Treatment Design for non-sewered systems<a class="anchor-link" href="#Waste-Water-Treatment-Design-for-non-sewered-systems"> </a></h1><h2 id="Household-Treatment-Systems:-design,-construction,-operation,-and-maintenance-with-real-time-controls">Household Treatment Systems: design, construction, operation, and maintenance with real-time controls<a class="anchor-link" href="#Household-Treatment-Systems:-design,-construction,-operation,-and-maintenance-with-real-time-controls"> </a></h2><h4 id="Updated:-Thursday,-September-26,-2018">Updated: Thursday, September 26, 2018<a class="anchor-link" href="#Updated:-Thursday,-September-26,-2018"> </a></h4><h3 id="For-RedHorse-implementation-in-August,-2019">For RedHorse implementation in August, 2019<a class="anchor-link" href="#For-RedHorse-implementation-in-August,-2019"> </a></h3><ul>
-<li>Read <a href="https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf">ANSI/NSF 350.1</a>, the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests.</li>
-<li>look at the page <a href="./testing.html">Testing</a> for more detail .</li>
-</ul>
-<p><img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left"></p>
-<p>This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in Beijing at the <a href="https://www.iso.org/news/ref2346.html">Reinvent Toilet Expo 2018</a>.</p>
-<p><a href="https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf">National</a> and international <a href="https://www.iso.org/standard/72523.html">International Organization for Standardization 30500</a> standards now exist for NSSS at a household level.</p>
-<p>An example of a high-quality product shipping today is the <a href="http://biomicrobics.com/products/biobarrier-membrane-bioreactor-mbr/">Biomicrobics biomembrane system</a> that satisfies the US NSF/ANSI Standard 350.</p>
-<p>A second system is <a href="https://www.sedron.com/firelight-toilet/">Sedron Technologies (Janicki) Firelight Toilet</a>, which will satisfy Standard 350.1</p>
-<p>A third example is the <a href="https://www.youtube.com/watch?gl=US&amp;hl=en&amp;client=mv-google&amp;v=eVQaMsvBLb8&amp;nomobile=1">CalTech Solar Powered Toilet</a></p>
-<p>A fourth example is <a href="https://www.eawag.ch/en/research/humanwelfare/wastewater/projekte/autarky/">EAWAG Autarky</a> developed by ETH Zurich.</p>
-<p>Note that these systems use technologies beyond standard biological and settlement systems.</p>
-<p>These systems are subcomponents of net-zero self-sustaining systems for life support, once only designed for space stations and planetary exploration.  Advances in these communities are now applied to devices for use in slum and rural communities on Earth.</p>
-<p>This site surveys the science, engineering, construction, and operation of household-size water and wastewater subsystems, with specific focus on wastewater recovery and reuse.</p>
-<p>As an science-fiction example of a net-zero life support system, see <a href="https://www.youtube.com/watch?v=ej3ioOneTy8">"<em>The Martian</em>"</a> showing imagined total material reuse for water and wastes on the surface of Mars. All energy derives directly from the Sun; there is no source of new water. Can such a system work?  For our focus, can wastewater recovery of potable water and nutrients be made to work inexpensively on Earth?</p>
-<p>Hundreds of research groups, companies, and governments have invested hundreds of millions of dollars to develop systems capable of treating household wastes for water recovery and energy conversion at the household level (see list below). Military, maritime and aerospace systems are constantly redesigned with promising new technologies.</p>
+<h4 id="updated-thursday-september-26-2018">Updated: Thursday, September 26, 2018</h4>
+
+<h3 id="for-redhorse-implementation-in-august-2019">For RedHorse implementation in August, 2019</h3>
 <ul>
-<li><a href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160014539.pdf">NASA Ames:Water Supply for trip to Mars</a> 2016 list of relevant treatment technologies.</li>
-<li><a href="https://www.soils.org/newsroom/releases/2015/1005/707/">Soil Science Society</a></li>
-<li><a href="https://scisoc.confex.com/scisoc/2016am/webprogram/Session16099.html">New Frontiers of Soil and Plant Science</a></li>
-<li><a href="https://scisoc.confex.com/scisoc/2016am/videogateway.cgi/id/27876?recordingid=27876">The Martian: Back of the Envelope Botany: What's really needed for total reuse: Bruce Bugbee</a></li>
+  <li>Read <a href="https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf">ANSI/NSF 350.1</a>, the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests.</li>
+  <li>look at the page <a href="./testing.html">Testing</a> for more detail .</li>
 </ul>
+
+<p><img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left" /></p>
+
+<p>This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in Beijing at the <a href="https://www.iso.org/news/ref2346.html">Reinvent Toilet Expo 2018</a>.</p>
+
+<p><a href="https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf">National</a> and international <a href="https://www.iso.org/standard/72523.html">International Organization for Standardization 30500</a> standards now exist for NSSS at a household level.</p>
+
+<p>An example of a high-quality product shipping today is the <a href="http://biomicrobics.com/products/biobarrier-membrane-bioreactor-mbr/">Biomicrobics biomembrane system</a> that satisfies the US NSF/ANSI Standard 350.</p>
+
+<p>A second system is <a href="https://www.sedron.com/firelight-toilet/">Sedron Technologies (Janicki) Firelight Toilet</a>, which will satisfy Standard 350.1</p>
+
+<p>A third example is the <a href="https://www.youtube.com/watch?gl=US&amp;hl=en&amp;client=mv-google&amp;v=eVQaMsvBLb8&amp;nomobile=1">CalTech Solar Powered Toilet</a></p>
+
+<p>A fourth example is <a href="https://www.eawag.ch/en/research/humanwelfare/wastewater/projekte/autarky/">EAWAG Autarky</a> developed by ETH Zurich.</p>
+
+<p>Note that these systems use technologies beyond standard biological and settlement systems.</p>
+
+<p>These systems are subcomponents of net-zero self-sustaining systems for life support, once only designed for space stations and planetary exploration.  Advances in these communities are now applied to devices for use in slum and rural communities on Earth.</p>
+
+<p>This site surveys the science, engineering, construction, and operation of household-size water and wastewater subsystems, with specific focus on wastewater recovery and reuse.</p>
+
+<p>As an science-fiction example of a net-zero life support system, see <a href="https://www.youtube.com/watch?v=ej3ioOneTy8">“<em>The Martian</em>”</a> showing imagined total material reuse for water and wastes on the surface of Mars. All energy derives directly from the Sun; there is no source of new water. Can such a system work?  For our focus, can wastewater recovery of potable water and nutrients be made to work inexpensively on Earth?</p>
+
+<p>Hundreds of research groups, companies, and governments have invested hundreds of millions of dollars to develop systems capable of treating household wastes for water recovery and energy conversion at the household level (see list below). Military, maritime and aerospace systems are constantly redesigned with promising new technologies.</p>
+
+<ul>
+  <li><a href="https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20160014539.pdf">NASA Ames:Water Supply for trip to Mars</a> 2016 list of relevant treatment technologies.</li>
+  <li><a href="https://www.soils.org/newsroom/releases/2015/1005/707/">Soil Science Society</a></li>
+  <li><a href="https://scisoc.confex.com/scisoc/2016am/webprogram/Session16099.html">New Frontiers of Soil and Plant Science</a></li>
+  <li><a href="https://scisoc.confex.com/scisoc/2016am/videogateway.cgi/id/27876?recordingid=27876">The Martian: Back of the Envelope Botany: What’s really needed for total reuse: Bruce Bugbee</a></li>
+</ul>
+
 <p>The RedHorse design for water reuse is based on engineered field experiments conducted by the Human Needs Project in Kibera, Nairobi, Kenya and San Rafael, California; RedHorse is currently building a working model, while dozens of existing companies currently are shipping systems of varying capabilities.</p>
+
 <p>Testing of the RedHorse design will follow the same analytical procedures described for the <a href="https://pubs.rsc.org/en/content/articlehtml/2018/ew/c8ew00209f">Caltech Toilet</a></p>
+
 <p>RedHorse, in cooperation with UC Berkeley, is building computational models of systems in design or on the market today, to compare and contrast design models. Then, with field data from operational sites, RedHorse proposes to maintain an on-going comparison of actual field performances world-wide, incorporating realized capital and operating expense data.</p>
-<h2 id="Research-and-development-groups">Research and development groups<a class="anchor-link" href="#Research-and-development-groups"> </a></h2><ul>
-<li>World Bank, WHO,</li>
-<li><a href="https://techdirectory.stepsforsanitation.org/">Gates Foundation: Transformative Sanitation Technology </a></li>
-<li>UC Berkeley: Civil and Environmental Engineering</li>
-<li><a href="https://sites.google.com/site/pyhonglab/">King Abdullah University of Science and Technology (KAUST)</a></li>
-<li><a href="https://wdrc.kaust.edu.sa/Pages/Research-1.aspx">KAUST</a></li>
-<li>UC Davis: Sanitation Engineering</li>
-<li><a href="http://www.bluediversiontoilet.com/">EAWAG</a></li>
-<li>California Institute of Technology</li>
-<li>University of Toronto</li>
-<li>Janicki Laboratories: Peter Janicki, now available through Sedron Technologies</li>
-<li><a href="https://pubs.acs.org/page/esthag/editors.html">Environmental Science and Technology</a></li>
-<li>RedHorse Constructors, San Rafael, California, and Kibera, Nairobi, Kenya</li>
+
+<h2 id="research-and-development-groups">Research and development groups</h2>
+<ul>
+  <li>World Bank, WHO,</li>
+  <li><a href="https://techdirectory.stepsforsanitation.org/">Gates Foundation: Transformative Sanitation Technology </a></li>
+  <li>UC Berkeley: Civil and Environmental Engineering</li>
+  <li><a href="https://sites.google.com/site/pyhonglab/">King Abdullah University of Science and Technology (KAUST)</a></li>
+  <li><a href="https://wdrc.kaust.edu.sa/Pages/Research-1.aspx">KAUST</a></li>
+  <li>UC Davis: Sanitation Engineering</li>
+  <li><a href="http://www.bluediversiontoilet.com/">EAWAG</a></li>
+  <li>California Institute of Technology</li>
+  <li>University of Toronto</li>
+  <li>Janicki Laboratories: Peter Janicki, now available through Sedron Technologies</li>
+  <li><a href="https://pubs.acs.org/page/esthag/editors.html">Environmental Science and Technology</a></li>
+  <li>RedHorse Constructors, San Rafael, California, and Kibera, Nairobi, Kenya</li>
 </ul>
-<h2 id="Sources">Sources<a class="anchor-link" href="#Sources"> </a></h2><p>Original design of the Kibera Town Centre waste water processing plant: UC Davis Sanitary Engineering Laboratory:
+
+<h2 id="sources">Sources</h2>
+
+<p>Original design of the Kibera Town Centre waste water processing plant: UC Davis Sanitary Engineering Laboratory:
 <a href="https://www.linkedin.com/in/harold-leverenz-a0ba635/">Dr. Harold Leverenz</a>;
 final technical implementation by <a href="https://www.linkedin.com/in/matt-woll-264a6828/">Matt Woll: Plavel Water, Questa Engineering</a>, and Norm Hantzsche. <a href="https://www.questaec.com">Questa Engineering, Richmond CA</a></p>
-
-</div>
-</div>
-</div>
-</div>
-
- 
-
 
             </div>
             <nav class="c-page__nav">

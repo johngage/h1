@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Testing</title>
-  <meta name="description" content="Testing procedures What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures: TestCBOD5TSSmg/Lmg/LInfluent sewag...">
+  <meta name="description" content="Testing proceduresWhat are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:            Test      CBOD5      TSS...">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/h1/0.5/testing.html">
-  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="http://0.0.0.0:4000/h1/feed.xml">
+  <link rel="canonical" href="https://johngage.github.io/h1/0.5/testing.html">
+  <link rel="alternate" type="application/rss+xml" title="HH Treatment" href="https://johngage.github.io/h1/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/h1/0.5/testing.html" />
+  <meta property="og:url"         content="https://johngage.github.io/h1/0.5/testing.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Testing" />
-<meta property="og:description" content="Testing procedures What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures: TestCBOD5TSSmg/Lmg/LInfluent sewag..." />
-<meta property="og:image"       content="http://0.0.0.0:4000/h1/images/logo/logo.png" />
+<meta property="og:description" content="Testing proceduresWhat are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:            Test      CBOD5      TSS..." />
+<meta property="og:image"       content="https://johngage.github.io/h1/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://0.0.0.0:4000/h1/0.5/testing.html",
+  "mainEntityOfPage": "https://johngage.github.io/h1/0.5/testing.html",
   "headline": "Testing",
-  "datePublished": "2019-09-26T15:11:37-05:00",
-  "dateModified": "2019-09-26T15:11:37-05:00",
-  "description": "Testing procedures What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures: TestCBOD5TSSmg/Lmg/LInfluent sewag...",
+  "datePublished": "2019-09-27T11:20:19-07:00",
+  "dateModified": "2019-09-27T11:20:19-07:00",
+  "description": "Testing proceduresWhat are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:            Test      CBOD5      TSS...",
   "author": {
     "@type": "Person",
     "name": "John Gage"
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/h1",
+      "url": "https://johngage.github.io/h1",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/h1",
+    "url": "https://johngage.github.io/h1",
     "height": 60,
     "width": 60
   }
@@ -53,7 +53,8 @@
 
   </script>
   <link rel="stylesheet" href="/h1/assets/css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/regular.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.css">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -87,26 +88,12 @@ MathJax.Hub.Config({
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
 
-  <!-- DOM updating function -->
-  <script>
-const runWhenDOMLoaded = cb => {
-  if (document.readyState != 'loading') {
-    cb()
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', cb)
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState == 'complete') cb()
-    })
-  }
-}
 
-// Helper function to init things quickly
-initFunction = function(myfunc) {
-  runWhenDOMLoaded(myfunc);
-  document.addEventListener('turbolinks:load', myfunc);
-};
-</script>
+  <!-- DOM updating function -->
+  <script src="/h1/assets/js/dom-update.js"></script>
+
+  <!-- Selectors for elements on the page -->
+  <script src="/h1/assets/js/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
@@ -115,62 +102,12 @@ initFunction = function(myfunc) {
 
   <!-- Add AnchorJS to let headers be linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script>
-const initAnchors = () => {
-  if (window.anchors === undefined) {
-    setTimeout(initAnchors, 250)
-    return
-  }
-  anchors.add("main h1, main h2, main h3, main h4")
-}
-
-initFunction(initAnchors);
-</script>
-
+  <script src="/h1/assets/js/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
-
-  <!-- Selectors for elements on the page -->
-  <script>
-/**
- * Select various elements on the page for later use
- */
-
-// IDs we'll attach to cells
-const codeCellId = index => `codecell${index}`
-const inputCellId = index => `inputcell${index}`
-
-pageElements = {}
-
-// All code cells
-findCodeCells = function() {
-    var codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre, div.text_cell_render div.highlight pre')
-    pageElements['codeCells'] = codeCells;
-
-    codeCells.forEach((codeCell, index) => {
-      const id = codeCellId(index)
-      codeCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findCodeCells);
-
-// All cells in general
-findInputCells = function() {
-    var inputCells = document.querySelectorAll('div.jb_cell')
-    pageElements['inputCells'] = inputCells;
-
-    inputCells.forEach((inputCell, index) => {
-        const id = inputCellId(index)
-        inputCell.setAttribute('id', id)
-    })
-};
-
-initFunction(findInputCells);
-</script>
 
   <!-- Load nbinteract for widgets -->
   
@@ -289,6 +226,13 @@ initFunction(addThebelabButtonToCodeCells);
             outputs.forEach((output, index) => {
                 output.remove();
             });
+
+            // Find any cells with an initialization tag and ask ThebeLab to run them when ready
+            var thebeInitCells = document.querySelectorAll('div.tag_thebelab-init');
+            thebeInitCells.forEach((cell) => {
+                console.log("Initializing ThebeLab with cell: " + cell.id);
+                cell.querySelector('.thebelab-run-button').click();
+            });
         }
 
         // Add event listener for the function to modify code cells
@@ -308,38 +252,9 @@ initFunction(addThebelabButtonToCodeCells);
 
 
 
-  <!-- Load the auto-generating TOC -->
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
-<script>
-const initToc = () => {
-  if (window.tocbot === undefined) {
-    setTimeout(initToc, 250)
-    return
-  }
-
-  // Check whether we have any sidebar content. If not, then show the sidebar earlier.
-  var SIDEBAR_CONTENT_TAGS = ['.tag_full_width', '.tag_popout'];
-  var sidebar_content_query = SIDEBAR_CONTENT_TAGS.join(', ')
-  if (document.querySelectorAll(sidebar_content_query).length === 0) {
-    document.querySelector('nav.onthispage').classList.add('no_sidebar_content')
-  }
-
-  // Initialize the TOC bot
-  tocbot.init({
-    tocSelector: 'nav.onthispage',
-    contentSelector: '.c-textbook__content',
-    headingSelector: 'h2, h3',
-    orderedList: false,
-    collapseDepth: 6,
-    listClass: 'toc__menu',
-    activeListItemClass: "",  // Not using
-    activeLinkClass: "", // Not using
-  });
-
-}
-initFunction(initToc);
-</script>
-
+  <script src="/h1/assets/js/tocbot.js"></script>
 
   <!-- Google analytics -->
   
@@ -457,147 +372,10 @@ initFunction(initQuery);
 </script>
 
   <!-- Load JS that depends on site variables -->
-  <script>
-/**
- * Set up copy/paste for code blocks
- */
-const clipboardButton = id =>
-  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/h1/assets/images/copy-button.svg" alt="Copy to clipboard">
-  </a>`
-
-// Clears selected text since ClipboardJS will select the text when copying
-const clearSelection = () => {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
-// Changes tooltip text for two seconds, then changes it back
-const temporarilyChangeTooltip = (el, newText) => {
-  const oldText = el.getAttribute('data-tooltip')
-  el.setAttribute('data-tooltip', newText)
-  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
-}
-
-const addCopyButtonToCodeCells = () => {
-  // If ClipboardJS hasn't loaded, wait a bit and try again. This
-  // happens because we load ClipboardJS asynchronously.
-  if (window.ClipboardJS === undefined) {
-    setTimeout(addCopyButtonToCodeCells, 250)
-    return
-  }
-
-  pageElements['codeCells'].forEach((codeCell) => {
-    const id = codeCell.getAttribute('id')
-    if (document.getElementById("copy-button" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
-    }
-  })
-
-  const clipboard = new ClipboardJS('.copybtn')
-  clipboard.on('success', event => {
-    clearSelection()
-    temporarilyChangeTooltip(event.trigger, 'Copied!')
-  })
-
-  clipboard.on('error', event => {
-    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
-  })
-
-  // Get rid of clipboard before the next page visit to avoid memory leak
-  document.addEventListener('turbolinks:before-visit', () =>
-    clipboard.destroy()
-  )
-}
-
-initFunction(addCopyButtonToCodeCells);
-</script>
-
+  <script src="/h1/assets/js/copy-button.js" async></script>
 
   <!-- Hide cell code -->
-  <script>
-    /**
-    Add buttons to hide code cells
-    */
-
-
-    var setCodeCellVisibility = function (inputField, kind) {
-        // Update the image and class for hidden
-        var id = inputField.getAttribute('data-id');
-        var codeCell = document.querySelector(`#${id} div.highlight`);
-
-        if (kind === "visible") {
-            codeCell.classList.remove('hidden');
-            inputField.checked = true;
-        } else {
-            codeCell.classList.add('hidden');
-            inputField.checked = false;
-        }
-    }
-
-    var toggleCodeCellVisibility = function (event) {
-        // The label is clicked, and now we decide what to do based on the input field's clicked status
-        if (event.target.tagName === "LABEL") {
-            var inputField = event.target.previousElementSibling;
-        } else {
-            // It is the span inside the target
-            var inputField = event.target.parentElement.previousElementSibling;
-        }
-
-        if (inputField.checked === true) {
-            setCodeCellVisibility(inputField, "visible");
-        } else {
-            setCodeCellVisibility(inputField, "hidden");
-        }
-    }
-
-
-    // Button constructor
-    const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
-
-    var addHideButton = function () {
-        // If a hide button is already added, don't add another
-        if (document.querySelector('div.tag_hide_input input') !== null) {
-            return;
-        }
-
-        // Find the input cells and add a hide button
-        pageElements['inputCells'].forEach(function (inputCell) {
-            if (!inputCell.classList.contains("tag_hide_input")) {
-                // Skip the cell if it doesn't have a hidecode class
-                return;
-            }
-
-            const id = inputCell.getAttribute('id')
-
-            // Insert the button just inside the end of the next div
-            inputCell.querySelector('div.input').insertAdjacentHTML('beforeend', hideCodeButton(id))
-
-            // Set up the visibility toggle
-            hideLink = document.querySelector(`#${id} div.inner_cell + input + label`);
-            hideLink.addEventListener('click', toggleCodeCellVisibility)
-        });
-    }
-
-
-    // Initialize the hide buttos
-    var initHiddenCells = function () {
-        // Add hide buttons to the cells
-        addHideButton();
-
-        // Toggle the code cells that should be hidden
-        document.querySelectorAll('div.tag_hide_input input').forEach(function (item) {
-            setCodeCellVisibility(item, 'hidden');
-            item.checked = true;
-        })
-    }
-
-    initFunction(initHiddenCells);
-
-</script>
+  <script src="/h1/assets/js/hide-cell.js" async></script>
 
   <!-- Printing the screen -->
   <!-- Include nbinteract for interactive widgets -->
@@ -746,7 +524,7 @@ initFunction(initPrint)
           href="/h1/01/1/overview.html"
         >
           
-          Design of Treatment Systems
+          Overview of Distributed Treatment Systems
         </a>
 
         
@@ -768,7 +546,7 @@ initFunction(initPrint)
                   href="/h1/01/1/waste-treatment-design.html"
                 >
                   
-                  Waste-treatment-design
+                  Designing Distributed Treatment Systems
                 </a>
 
                 
@@ -785,7 +563,7 @@ initFunction(initPrint)
                   href="/h1/01/1/ww-datascience.html"
                 >
                   
-                  WW-datascience
+                  Data Science for Waste Water Engineering
                 </a>
 
                 
@@ -802,7 +580,7 @@ initFunction(initPrint)
                   href="/h1/01/3/why-research-platform.html"
                 >
                   
-                  Why-research-platform
+                  RedHorse Constructors Research Platform
                 </a>
 
                 
@@ -998,20 +776,10 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><i class="fa fa-download"></i></button>
     <div class="download-buttons">
-        <a href="/h1/content/0.5/testing.md" download>
-        <button id="interact-button-download" class="interact-button">ORIG</button>
-        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">PDF</button></a>
     </div>
 </div>
-
-  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
-
-  
-  
-  
-
 
 </div>
 
@@ -1027,193 +795,221 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="jb_cell">
+              <h1 id="testing-procedures">Testing procedures</h1>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Testing-procedures">Testing procedures<a class="anchor-link" href="#Testing-procedures"> </a></h1><h2 id="What-are-we-testing-for-on-our-first-pass?--Decreased-organic-material.-Usual-sewage-influent-measures:">What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:<a class="anchor-link" href="#What-are-we-testing-for-on-our-first-pass?--Decreased-organic-material.-Usual-sewage-influent-measures:"> </a></h2><table>
-<thead><tr>
-<th style="text-align:center">Test</th>
-<th style="text-align:center">CBOD5</th>
-<th style="text-align:center">TSS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">mg/L</td>
-<td style="text-align:center">mg/L</td>
-</tr>
-<tr>
-<td style="text-align:center">Influent sewage</td>
-<td style="text-align:center">350 - 600</td>
-<td style="text-align:center">360-600</td>
-</tr>
-<tr>
-<td style="text-align:center">Treated Effluent</td>
-<td style="text-align:center">10</td>
-<td style="text-align:center">10</td>
-</tr>
-</tbody>
+<h2 id="what-are-we-testing-for-on-our-first-pass--decreased-organic-material-usual-sewage-influent-measures">What are we testing for on our first pass?  Decreased organic material. Usual sewage influent measures:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Test</th>
+      <th style="text-align: center">CBOD5</th>
+      <th style="text-align: center">TSS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">mg/L</td>
+      <td style="text-align: center">mg/L</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Influent sewage</td>
+      <td style="text-align: center">350 - 600</td>
+      <td style="text-align: center">360-600</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Treated Effluent</td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">10</td>
+    </tr>
+  </tbody>
 </table>
+
 <ul>
-<li>Once we show adequate performance in simple reduction of CBOD--one measurement of the amount of organic material in the influent--we must turn to more comprehensive measures.</li>
+  <li>Once we show adequate performance in simple reduction of CBOD–one measurement of the amount of organic material in the influent–we must turn to more comprehensive measures.</li>
 </ul>
-<p>Here's an example of test results for a system sold by <a href="http://www.microseptec.com/engineers-effluent.htm">MicroSepTec</a>; or <a href="https://busse-is.de">Busse</a></p>
+
+<p>Here’s an example of test results for a system sold by <a href="http://www.microseptec.com/engineers-effluent.htm">MicroSepTec</a>; or <a href="https://busse-is.de">Busse</a></p>
+
 <p>The most recent US standard (not counting newer state standards)
 is the <a href="https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf">ANSI/NSF 350.1</a></p>
+
 <p>Read it for the test standards RedHorse must meet.</p>
+
 <p>Here are some relevant international standards.
 <a href="https://www.ncbi.nlm.nih.gov/pubmed/16104416">International standards for domestic on site treatment</a>
 <a href="https://www.ncbi.nlm.nih.gov/pubmed/14753562">A system for on-site evaluation of small wastewater treatment plants (2003)</a></p>
+
 <p>Note that many studies assess the value of creation of biogas in the anaerobic chamber for fuel. Our focus is clean water, not fuel, but a spectrum of designs should be examined.</p>
+
 <ul>
-<li>Treatment systems should meet NSF/ANSI 40 standards:</li>
+  <li>
+    <p>Treatment systems should meet NSF/ANSI 40 standards:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To achieve certification, treatment systems must produce an acceptable quality of effluent during a six-month (26-week) test.
+
+Class I systems must achieve a 30-day average effluent quality of 25 mg/L CBOD5 and 30 mg/L TSS or less, and pH 6.0-9.0 spanning six months of testing. System service and maintenance are prohibited during the test period.
+
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <h2 id="nsfansi-standard"><a href="http://www.nsf.org/services/by-industry/water-wastewater/onsite-wastewater/residential-wastewater-treatment-systems">NSF/ANSI Standard</a></h2>
+      </li>
+    </ul>
+  </li>
 </ul>
 
-<pre><code>  To achieve certification, treatment systems must produce an acceptable quality of effluent during a six-month (26-week) test.
+<h2 id="amount-of-organic-material-in-water">Amount of organic material in water</h2>
+<ul>
+  <li>By weight
+    <ul>
+      <li>Total solids</li>
+      <li>Total suspended solids + total sediment</li>
+    </ul>
+  </li>
+  <li>
+    <p>How to measure Total Suspended Solids:</p>
+  </li>
+  <li><a href="https://www.youtube.com/watch?v=_fKGM040wvI">TSS measurement</a></li>
+  <li>
+    <p>How to measure Total solids</p>
+  </li>
+  <li><a href="https://www.fondriest.com/environmental-measurements/parameters/water-quality/turbidity-total-suspended-solids-water-clarity/">TSS definition</a></li>
+  <li>
+    <p><a href="https://archive.epa.gov/water/archive/web/html/vms58.html">Total solids</a></p>
 
-  Class I systems must achieve a 30-day average effluent quality of 25 mg/L CBOD5 and 30 mg/L TSS or less, and pH 6.0-9.0 spanning six months of testing. System service and maintenance are prohibited during the test period.</code></pre>
-<h2 id="----NSF/ANSI-Standard">  - <a href="http://www.nsf.org/services/by-industry/water-wastewater/onsite-wastewater/residential-wastewater-treatment-systems">NSF/ANSI Standard</a><a class="anchor-link" href="#----NSF/ANSI-Standard"> </a></h2><h2 id="Amount-of-organic-material-in-water">Amount of organic material in water<a class="anchor-link" href="#Amount-of-organic-material-in-water"> </a></h2><ul>
-<li><p>By weight</p>
-<ul>
-<li>Total solids</li>
-<li>Total suspended solids + total sediment</li>
+    <ul>
+      <li>BOD, COD, and testing procedures</li>
+    </ul>
+  </li>
 </ul>
-</li>
-<li><p>How to measure Total Suspended Solids:</p>
-</li>
-<li><p><a href="https://www.youtube.com/watch?v=_fKGM040wvI">TSS measurement</a></p>
-</li>
-<li><p>How to measure Total solids</p>
-</li>
-<li><p><a href="https://www.fondriest.com/environmental-measurements/parameters/water-quality/turbidity-total-suspended-solids-water-clarity/">TSS definition</a></p>
-</li>
-<li><p><a href="https://archive.epa.gov/water/archive/web/html/vms58.html">Total solids</a></p>
-<ul>
-<li>BOD, COD, and testing procedures</li>
-</ul>
-</li>
-</ul>
-<h2 id="Look-here-for-what-to-do-at-RedHorse-this-week----Can-COD-test-be-done-in-2-days,-and-substitute-for-BOD?)">Look here for what to do at RedHorse this week  - <a href="https://extension.uga.edu/publications/detail.html?number=C992&amp;title=Understanding%20Laboratory%20Wastewater%20Tests:%20I.%20ORGANICS%20(BOD,%20COD,%20TOC,%20O&amp;G">Can COD test be done in 2 days, and substitute for BOD?</a>)<a class="anchor-link" href="#Look-here-for-what-to-do-at-RedHorse-this-week----Can-COD-test-be-done-in-2-days,-and-substitute-for-BOD?)"> </a></h2><h2 id="Specific-procedures-for-lab-testing,-showing-equipment,-and-step-by-step">Specific procedures for lab testing, showing equipment, and step-by-step<a class="anchor-link" href="#Specific-procedures-for-lab-testing,-showing-equipment,-and-step-by-step"> </a></h2><p><a href="http://prg.ukzn.ac.za/docs/default-source/laboratory-documents/sop-manual_august-2013.pdf?sfvrsn=2">University of Kwa-Zulu Natal</a></p>
-<h2 id="Lists-what-is-tested,-and-the-appropriate-standard">Lists what is tested, and the appropriate standard<a class="anchor-link" href="#Lists-what-is-tested,-and-the-appropriate-standard"> </a></h2><p><a href="https://pubs.rsc.org/en/content/articlehtml/2018/ew/c8ew00209f">CalTech Toilet</a></p>
-<h2 id="All-the-standards">All the standards<a class="anchor-link" href="#All-the-standards"> </a></h2><p><a href="https://www.researchgate.net/file.PostFileLoader.html?id=54a6cc66cf57d709028b457a&amp;assetKey=AS:273663767580673@1442257934916">Standard Methods</a></p>
-<h2 id="Complete-survey-of-all-technologies.">Complete survey of all technologies.<a class="anchor-link" href="#Complete-survey-of-all-technologies."> </a></h2><p><a href="https://www.un-ihe.org/sites/default/files/fsm_book_lr.pdf">Faecal Sludge Management: Systems Approach: EAWAG/UN</a></p>
-<h2 id="NSF/ANSI-350.1-Test-Standards">NSF/ANSI 350.1 Test Standards<a class="anchor-link" href="#NSF/ANSI-350.1-Test-Standards"> </a></h2><table>
-<thead><tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:center">Sample</th>
-<th style="text-align:center">Raw influent</th>
-<th style="text-align:center">Treated effluent</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">BOD5</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">CBOD5</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:left">Total suspended solids</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:left">pH</td>
-<td style="text-align:center">Grab</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:left">Temperature (°C)</td>
-<td style="text-align:center">Grab</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">E. coli</td>
-<td style="text-align:center">Grab</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:left">Turbidity</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-</tr>
-<tr>
-<td style="text-align:left">TKN</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">NO2/NO3</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">Total phosphorous</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">COD</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">Total coliforms</td>
-<td style="text-align:center">Grab</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">TOC</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">Surfactants</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">Fats, oil and grease</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:left">Iron</td>
-<td style="text-align:center">24 h composite</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
+
+<h2 id="look-here-for-what-to-do-at-redhorse-this-week----can-cod-test-be-done-in-2-days-and-substitute-for-bod">Look here for what to do at RedHorse this week  - <a href="https://extension.uga.edu/publications/detail.html?number=C992&amp;title=Understanding%20Laboratory%20Wastewater%20Tests:%20I.%20ORGANICS%20(BOD,%20COD,%20TOC,%20O&amp;G)">Can COD test be done in 2 days, and substitute for BOD?</a></h2>
+
+<h2 id="specific-procedures-for-lab-testing-showing-equipment-and-step-by-step">Specific procedures for lab testing, showing equipment, and step-by-step</h2>
+<p><a href="http://prg.ukzn.ac.za/docs/default-source/laboratory-documents/sop-manual_august-2013.pdf?sfvrsn=2">University of Kwa-Zulu Natal</a></p>
+
+<h2 id="lists-what-is-tested-and-the-appropriate-standard">Lists what is tested, and the appropriate standard</h2>
+<p><a href="https://pubs.rsc.org/en/content/articlehtml/2018/ew/c8ew00209f">CalTech Toilet</a></p>
+
+<h2 id="all-the-standards">All the standards</h2>
+<p><a href="https://www.researchgate.net/file.PostFileLoader.html?id=54a6cc66cf57d709028b457a&amp;assetKey=AS:273663767580673@1442257934916">Standard Methods</a></p>
+
+<h2 id="complete-survey-of-all-technologies">Complete survey of all technologies.</h2>
+<p><a href="https://www.un-ihe.org/sites/default/files/fsm_book_lr.pdf">Faecal Sludge Management: Systems Approach: EAWAG/UN</a></p>
+
+<h2 id="nsfansi-3501-test-standards">NSF/ANSI 350.1 Test Standards</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Parameter</th>
+      <th style="text-align: center">Sample</th>
+      <th style="text-align: center">Raw influent</th>
+      <th style="text-align: center">Treated effluent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">BOD5</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CBOD5</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Total suspended solids</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">pH</td>
+      <td style="text-align: center">Grab</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Temperature (°C)</td>
+      <td style="text-align: center">Grab</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">E. coli</td>
+      <td style="text-align: center">Grab</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Turbidity</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center">X</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TKN</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">NO2/NO3</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Total phosphorous</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">COD</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Total coliforms</td>
+      <td style="text-align: center">Grab</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">TOC</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Surfactants</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Fats, oil and grease</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Iron</td>
+      <td style="text-align: center">24 h composite</td>
+      <td style="text-align: center">X</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
 </table>
-
-</div>
-</div>
-</div>
-</div>
-
- 
-
 
             </div>
             <nav class="c-page__nav">

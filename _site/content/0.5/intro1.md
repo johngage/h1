@@ -2,7 +2,7 @@
 # Waste Water Treatment Design for non-sewered systems
 ## Household Treatment Systems: design, construction, operation, and maintenance with real-time controls
 
-#### Updated: Thursday, September 26, 2018
+#### Updated: Thursday night, September 26, 2018
 
 ### For RedHorse implementation in August, 2019
 - Read [ANSI/NSF 350.1](https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf), the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests.
