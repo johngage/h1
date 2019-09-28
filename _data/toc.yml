@@ -22,9 +22,17 @@
 # See the links below for an example.
 
 # Top-level page
-- header: 'Quick survey of 2019 NSSS Technology'
+- header: 'Survey of 2019 NSSS Technology'
+#  not_numbered: true
+- title: 'Most recent update'
+  not_numbered: true
+  url: /intro
+  not_numbered: true
+#- title: older intro
+#  url: /oldintro
+#  not_numbered: true
 
-- title: Home
+- title: Introduction
   url: /0.5/intro1
   not_numbered: true
   expand_sections: true
