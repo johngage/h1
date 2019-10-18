@@ -16,10 +16,10 @@
 
 #######################################################################################
 # Jekyll site settings
-title: HH Treatment
+title: Distributed Treatment
 author: John Gage
 email: john.gage@gmail.com
-description: "build HTML site- in _site or in _build?"
+description: Distributed or non-sewer waste water treatment
 baseurl: /h1             # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
 url: https://johngage.github.io # the base hostname & protocol for your site, e.g. http://example.com
 

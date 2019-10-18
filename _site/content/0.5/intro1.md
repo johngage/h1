@@ -2,25 +2,39 @@
 # Waste Water Treatment Design for non-sewered systems
 ## Household Treatment Systems: design, construction, operation, and maintenance with real-time controls
 
-#### Updated: Thursday night, September 26, 2018
+#### Updated: Friday, Oct 18, 2018
 
-### For RedHorse implementation in August, 2019
-- Read [ANSI/NSF 350.1](https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf), the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests.
-- look at the page [Testing](./testing.html) for more detail .
+- [Overview of major initiatives in the OnSite treatment revolution: 2000](https://www.wwdmag.com/decentralized-wastewater/onsite-revolution-new-technology-better-solutions)
+
+- Where are we, almost twenty years later?  See below for new national and international standards, for lists of manufacturers of on-site systems, and for the most recent research.
+- RedHorse Constructors is building and testing prototypes, based on designs by UC Davis and [Questa Engineering, in Richmond, California](https://richmondconfidential.org/2018/12/04/can-a-richmond-mans-love-of-water-save-the-ocean/)
+
+This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in Beijing at the [Reinvent Toilet Expo 2018](https://www.iso.org/news/ref2346.html). These systems are also known as "on-site treatment", or "distributed treatment" facilities.
+
+
+
+### RedHorse implementation in August, 2019
+- Assignments for working team:
+1.  Read [ANSI/NSF 350.1](https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf), the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests.
+2. Look at the page [Testing](./testing.html) for more detail.
+3. Review all the competing products listed on the Manufacturers page, and their testing regimes.
+
+There's a short list below.
 
 <img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left">
 
-This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in Beijing at the [Reinvent Toilet Expo 2018](https://www.iso.org/news/ref2346.html).
 
 [National](https://aspe.org/sites/default/files/webfm/pdfs/NSF.pdf) and international [International Organization for Standardization 30500](https://www.iso.org/standard/72523.html) standards now exist for NSSS at a household level.
 
 An example of a high-quality product shipping today is the [Biomicrobics biomembrane system](http://biomicrobics.com/products/biobarrier-membrane-bioreactor-mbr/) that satisfies the US NSF/ANSI Standard 350.
 
-A second system is [Sedron Technologies (Janicki) Firelight Toilet](https://www.sedron.com/firelight-toilet/), which will satisfy Standard 350.1
+A second system is [Sedron Technologies (Janicki) Firelight Toilet](https://www.sedron.com/firelight-toilet/), which will satisfy Standard 350.1. [Here's a diagram of the Janicki Omniprocessor](https://www.sedron.com/janicki-omni-processor/how-it-works/)
 
 A third example is the [CalTech Solar Powered Toilet](https://www.youtube.com/watch?gl=US&hl=en&client=mv-google&v=eVQaMsvBLb8&nomobile=1)
 
 A fourth example is [EAWAG Autarky](https://www.eawag.ch/en/research/humanwelfare/wastewater/projekte/autarky/) developed by ETH Zurich.
+
+The [Center for the Advancement of Water and Wastewater Technologies](https://cawt.ca/) has formed alliances with dozens of vendors.
 
 Note that these systems use technologies beyond standard biological and settlement systems.
 
