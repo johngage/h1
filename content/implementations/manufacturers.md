@@ -1,4 +1,7 @@
-
+# Vendors of Home Treatment Systems
+- by standards certification
+- by country
+- by patent
 ## Vendor Standards Certifications
 
 Vendor | [ANSI 40](http://www.nsf.org/services/by-industry/water-wastewater/onsite-wastewater/residential-wastewater-treatment-systems) | ANSI 245  | ANSI 350.1
@@ -87,17 +90,3 @@ US Patents:
 - [Charles Wofford-24 citations:2000](https://patents.google.com/patent/US6428691B1/en?q=On-site&q=wastewater+treatment&q=system&oq=On-site+wastewater+treatment+system)
 - [William Stuth:1991](https://patents.google.com/patent/US5202027A/en?q=On-site&q=wastewater+treatment&q=system&oq=On-site+wastewater+treatment+system)
 - [Wayne Allen Wolf:2010](https://patents.google.com/patent/US8486275B2/en?q=On-site&q=wastewater+treatment&q=system&oq=On-site+wastewater+treatment+system&page=2)
-
-
-### Jupyter notebooks for hydrodynamic flow models of coupled reactors
-
-
-```
-jupyternotebook
-
-```
-
-### Jupyter notebooks for dynamic microbial biome models: growth and death of biofilms -> sloughing rate
-
-- Model by species
-- Model by density

@@ -14,7 +14,7 @@ plan** capable of sustainable, profitable operation
 - a commitment by management and political leaders to high standards of quality, response to the community, and open data and open analysis.
 
 Many initiatives today address the lack of sanitation in India, in China, and in urban slums
-world-wide.  However, **these new systems should be in every home**, in every school, in every clinic, at every level of economic wealth; we are in a new
+world-wide.  However, **these new systems should be in every home**, in every school, in every clinic, at every level of economic wealth. We are in a new environment of fire, drought, and flood; even those in the richest countries can no longer rely upon a steady supply of clean water.
 
 This sequence of chapters seeks to:
 - introduce the parameters of the global problem,
