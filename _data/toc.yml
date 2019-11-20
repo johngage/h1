@@ -22,47 +22,56 @@
 # See the links below for an example.
 
 # Top-level page
-- header: 'Survey of 2019 NSSS Technology'
+- header: 'Survey of 2019 Water Treatment Technology'
 #  not_numbered: true
-- title: 'Most recent update'
-  not_numbered: true
+- title: Survey
   url: /intro
   not_numbered: true
-#- title: older intro
-#  url: /oldintro
-#  not_numbered: true
-
-- title: Introduction
-  url: /0.5/intro1
+- title: Overview of Distributed Treatment Systems
+  url: /hwt/overview
   not_numbered: true
   expand_sections: true
   sections:
-  - title: Manufacturers
-    url: /0.5/manufacturers
+  - title: Introduction
+    url: /implementations/intro1
     not_numbered: true
-  - title: Testing
-    url: /0.5/testing
-  - title: Measuring Nutrient mass
-    url: /0.5/ExpressionsAndUnits
+  - title: Manufacturers and Patents
+    url: /implementations/manufacturers
+    not_numbered: true
+  - title: RedHorse Wetlands in a Box
+    url: /implementations/redhorse
     not_numbered: true
 
-- title: Overview of Distributed Treatment Systems
-  url: /01/1/overview
+  - title: Testing
+    url: /implementations/testing
+  - title: Measuring Nutrient Mass
+    url: /implementations/ExpressionsAndUnits
+    not_numbered: true
+
+
+
+- title: Designing Distributed Treatment Systems
+  url: /hwt/design
   not_numbered: true
   expand_sections: true
   sections:
   - title: Designing Distributed Treatment Systems
-    url: /01/1/waste-treatment-design
+    url: /hwt/waste-treatment-design
   - title: Data Science for Waste Water Engineering
-    url: /01/1/ww-datascience
+    url: /hwt/ww-datascience
   - title: RedHorse Constructors Research Platform
-    url: /01/3/why-research-platform
+    url: /hwt/why-research-platform
+  - title: Redhorse August Workplan
+    url: /implementations/augworkplan
   - title: Biblio
-    url: /01/3/biblio
+    url: /hwt/biblio
+
+- title: Jupyter Notebooks for analysis
+  url: /waterdatascience/jupyternotebook
 - title: Statistical-techniques
-  url: /01/4/statistical-techniques
+  url: /waterdatascience/statistical-techniques
   not_numbered: true
-  expand_sections: true
+
 # External link
 - title: GitHub repository
   url: https://github.com/jupyter/jupyter-book

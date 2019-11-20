@@ -8,14 +8,14 @@
   <title>Search the site</title>
   <meta name="description" content="        ">
 
-  <link rel="canonical" href="https://johngage.github.io/h1/search">
-  <link rel="alternate" type="application/rss+xml" title="Distributed Treatment" href="https://johngage.github.io/h1/feed.xml">
+  <link rel="canonical" href="/search">
+  <link rel="alternate" type="application/rss+xml" title="Distributed Treatment" href="/feed.xml">
 
-  <meta property="og:url"         content="https://johngage.github.io/h1/search" />
+  <meta property="og:url"         content="/search" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Search the site" />
 <meta property="og:description" content="        " />
-<meta property="og:image"       content="https://johngage.github.io/h1/images/logo/logo.png" />
+<meta property="og:image"       content="/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://johngage.github.io/h1/search",
+  "mainEntityOfPage": "/search",
   "headline": "Search the site",
-  "datePublished": "2019-10-18T14:38:29-07:00",
-  "dateModified": "2019-10-18T14:38:29-07:00",
+  "datePublished": "2019-11-19T16:29:47-08:00",
+  "dateModified": "2019-11-19T16:29:47-08:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -38,21 +38,21 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://johngage.github.io/h1",
+      "url": "",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://johngage.github.io/h1",
+    "url": "",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/h1/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/regular.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/solid.css">
 
@@ -63,7 +63,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/h1/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -90,19 +90,19 @@ MathJax.Hub.Config({
 
 
   <!-- DOM updating function -->
-  <script src="/h1/assets/js/dom-update.js"></script>
+  <script src="/assets/js/dom-update.js"></script>
 
   <!-- Selectors for elements on the page -->
-  <script src="/h1/assets/js/documentSelectors.js"></script>
+  <script src="/assets/js/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/h1';
+    const site_basename = '';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script src="/h1/assets/js/anchors.js" async></script>
+  <script src="/assets/js/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
@@ -124,7 +124,7 @@ MathJax.Hub.Config({
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/h1/assets/images/edit-button.svg" alt="Start interactive mode">
+    <img src="/assets/images/edit-button.svg" alt="Start interactive mode">
   </a>`
 
 
@@ -149,8 +149,8 @@ initFunction(addThebelabButtonToCodeCells);
     {
       requestKernel: true,
       binderOptions: {
-        repo: 'YOUR-ORG/YOUR-REPO',
-        ref: 'gh-pages',
+        repo: 'johngage/h1',
+        ref: 'master',
       },
       codeMirrorConfig: {
         theme: "abcdef"
@@ -254,7 +254,7 @@ initFunction(addThebelabButtonToCodeCells);
 
   <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
-  <script src="/h1/assets/js/tocbot.js"></script>
+  <script src="/assets/js/tocbot.js"></script>
 
   <!-- Google analytics -->
   
@@ -274,14 +274,155 @@ initFunction(addThebelabButtonToCodeCells);
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
 
   <!-- Load custom website scripts -->
-  <script src="/h1/assets/js/scripts.js" async></script>
+  <script src="/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/h1/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/h1/assets/custom/custom.css">
+  <script src="/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
+<script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+    
+function dict2param(dict) {
+    params = Object.keys(dict).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(dict[k])
+    });
+    return params.join('&')
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return dict2param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = document.querySelectorAll("a").forEach(function(link) {
+    var href = link.href;
+    // If the link is an internal link...
+    if (href.search("") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['jupyterhub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'jupyterhub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + dict2param(params);
+      link.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    jupyterHubUrl = rest['jupyterhub'];
+    var hubType = null;
+    var hubUrl = null;
+    if (jupyterHubUrl !== undefined) {
+      hubType = 'jupyterhub';
+      hubUrl = jupyterHubUrl;
+    }
+
+    if (hubType !== null) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      var interactButtons = document.querySelectorAll("button.interact-button")
+      var lastButton = interactButtons[interactButtons.length-1];
+      var link = lastButton.parentElement;
+
+      // If we've already run this, skip the link updating
+      if (link.nextElementSibling !== null) {
+        return;
+      }
+
+      // Update the link and add context div
+      var href = link.getAttribute('href');
+      if (lastButton.id === 'interact-button-binder') {
+        // If binder links exist, we need to re-work them for jupyterhub
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+          first = [hubUrl, 'git-sync'].join('/')
+        } else {
+          first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+        }
+        href = first + '?' + binder2Jupyterhub(href);
+      } else {
+        // If interact button isn't binderhub, assume it's jupyterhub
+        // If JupyterHub links, we only need to replace the hub url
+        href = href.replace("", hubUrl);
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // Assume we're working from a local Jupyter server and remove `/hub`
+          href = href.replace("/hub/user-redirect", "");
+        }
+      }
+      link.setAttribute('href', decodeURIComponent(href));
+
+      // Add text after interact link saying where we're launching
+      hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+      link.insertAdjacentHTML('afterend', '<div class="interact-context">on ' + hubUrlNoHttp + '</div>');
+
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+
 
   <!-- Lunr search code - will only be executed on the /search page -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
@@ -372,10 +513,10 @@ initFunction(initQuery);
 </script>
 
   <!-- Load JS that depends on site variables -->
-  <script src="/h1/assets/js/copy-button.js" async></script>
+  <script src="/assets/js/copy-button.js" async></script>
 
   <!-- Hide cell code -->
-  <script src="/h1/assets/js/hide-cell.js" async></script>
+  <script src="/assets/js/hide-cell.js" async></script>
 
   <!-- Printing the screen -->
   <!-- Include nbinteract for interactive widgets -->
@@ -395,7 +536,7 @@ printContent = () => {
     printJS({
         printable: 'textbook_content',
         type: 'html',
-        css: "/h1/assets/css/styles.css",
+        css: "/assets/css/styles.css",
         scanStyles: false,
         targetStyles: ["*"],
         ignoreElements: ignoreAssistList
@@ -419,13 +560,13 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyter.org/jupyter-book/"><img src="/h1/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <a href="https://jupyter.org/jupyter-book/"><img src="/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Distributed Treatment</h2>
   <ul class="c-sidebar__chapters">
     
       
       
-        <li><h2 class="c-sidebar__title">Survey of 2019 NSSS Technology</li>
+        <li><h2 class="c-sidebar__title">Survey of 2019 Water Treatment Technology</li>
         
       
       
@@ -437,10 +578,10 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/h1/intro.html"
+          href="/intro.html"
         >
           
-          Most recent update
+          Survey
         </a>
 
         
@@ -458,10 +599,10 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/h1/0.5/intro1.html"
+          href="/hwt/overview.html"
         >
           
-          Introduction
+          Overview of Distributed Treatment Systems
         </a>
 
         
@@ -480,10 +621,10 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/0.5/manufacturers.html"
+                  href="/implementations/intro1.html"
                 >
                   
-                  Manufacturers
+                  Introduction
                 </a>
 
                 
@@ -497,7 +638,41 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/0.5/testing.html"
+                  href="/implementations/manufacturers.html"
+                >
+                  
+                  Manufacturers and Patents
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/implementations/redhorse.html"
+                >
+                  
+                  RedHorse Wetlands in a Box
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/implementations/testing.html"
                 >
                   
                   Testing
@@ -514,10 +689,10 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/0.5/ExpressionsAndUnits.html"
+                  href="/implementations/ExpressionsAndUnits.html"
                 >
                   
-                  Measuring Nutrient mass
+                  Measuring Nutrient Mass
                 </a>
 
                 
@@ -542,10 +717,10 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/h1/01/1/overview.html"
+          href="/hwt/design.html"
         >
           
-          Overview of Distributed Treatment Systems
+          Designing Distributed Treatment Systems
         </a>
 
         
@@ -564,7 +739,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/01/1/waste-treatment-design.html"
+                  href="/hwt/waste-treatment-design.html"
                 >
                   
                   Designing Distributed Treatment Systems
@@ -581,7 +756,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/01/1/ww-datascience.html"
+                  href="/hwt/ww-datascience.html"
                 >
                   
                   Data Science for Waste Water Engineering
@@ -598,7 +773,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/01/3/why-research-platform.html"
+                  href="/hwt/why-research-platform.html"
                 >
                   
                   RedHorse Constructors Research Platform
@@ -615,7 +790,24 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/01/3/biblio.html"
+                  href="/implementations/augworkplan.html"
+                >
+                  
+                  Redhorse August Workplan
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/hwt/biblio.html"
                 >
                   
                   Biblio
@@ -643,7 +835,30 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/h1/01/4/statistical-techniques.html"
+          href="/waterdatascience/jupyternotebook.html"
+        >
+          
+            1.
+          
+          Jupyter Notebooks for analysis
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/waterdatascience/statistical-techniques.html"
         >
           
           Statistical-techniques
@@ -688,7 +903,7 @@ initFunction(initPrint)
           href=".html"
         >
           
-            1.
+            2.
           
           Search
         </a>
@@ -716,7 +931,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/h1/features/features.html"
+          href="/features/features.html"
         >
           
           Features and customization
@@ -738,7 +953,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/features/markdown.html"
+                  href="/features/markdown.html"
                 >
                   
                   Markdown files
@@ -755,7 +970,7 @@ initFunction(initPrint)
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/h1/features/notebooks.html"
+                  href="/features/notebooks.html"
                 >
                   
                   Jupyter notebooks
@@ -811,7 +1026,7 @@ initFunction(initPrint)
     <nav class="onthispage">
     </nav>
   </aside>
-  <a href="/h1/search.html" class="topbar-right-button" id="search-button"><i class="fa fa-search"></i></a>
+  <a href="/search.html" class="topbar-right-button" id="search-button"><i class="fa fa-search"></i></a>
 </div>
 
       <main class="c-textbook__page" tabindex="-1">
@@ -830,7 +1045,7 @@ initFunction(initPrint)
             "3.1 Expressions And Units For Analyzing Wastewater Flows Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the Python programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs. Programs are made up of expressions, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a * symbol between two numerical expressions. Expressions,...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/0.5/ExpressionsAndUnits.html",
+        "url": "/0.5/ExpressionsAndUnits.html",
         "teaser":null},{
         "title": "Introduction",
         
@@ -838,7 +1053,7 @@ initFunction(initPrint)
             "RedHorse Constructor Waste Water Treatment Design for non-sewered systems Household Treatment Systems: design, construction, operation, and maintenance with real-time controls Updated: Friday, Oct 18, 2018 Overview of major initiatives in the OnSite treatment revolution: 2000 Where are we, almost twenty years later? See below for new national and international standards, for lists of manufacturers of on-site systems, and for the most recent research. RedHorse Constructors is building and testing prototypes, based on designs by UC Davis and Questa Engineering, in Richmond, California This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/0.5/intro1.html",
+        "url": "/0.5/intro1.html",
         "teaser":null},{
         "title": "Manufacturers",
         
@@ -846,7 +1061,7 @@ initFunction(initPrint)
             "Vendor Standards Certifications Vendor ANSI 40 ANSI 245 ANSI 350.1 Residential &gt;400gpd Nitrogen &lt;19 mg/L Pugo Systems X X unk Biorealis unk unk unk Biomicrobics Microfast X X unk Biomicrobics Biobarrier X X X BOD &lt; 5mg/L;TSS&lt; 2mg/L;Turb&lt;.2NTU;fec&lt;200CFU/100ml Biomicrobics SeptiTech X X unk Commercial manufacturers linked to Gates Foundation Toilet Initiative For an overview from the Gates Foundation Sanitation Division, see 2019 Gates Foundation Wastewater Treatment China Clear CRRC EcoSan United States Sedron Technologies (Janicki) OmniProcessor Sedron Technologies (Janicki) Firelight Toilet India Eram Scientific-CalTech Ankur Scientific (distributing OmniProcessor) Tide Technocrats Thailand SCG Chemicals Japan LIXIL Commercial Residential Wastewater Treatment systems...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/0.5/manufacturers.html",
+        "url": "/0.5/manufacturers.html",
         "teaser":null},{
         "title": "Testing",
         
@@ -854,7 +1069,7 @@ initFunction(initPrint)
             "Testing procedures What are we testing for? Decreased organic material. Usual sewage influent measures: Test CBOD5 TSS mg/L mg/L Influent sewage 350 - 600 360-600 Treated Effluent 10 10 Once we show adequate performance in simple reduction of CBOD--one measurement of the amount of organic material in the influent--we must turn to more comprehensive measures. Here's an example of test results for a system sold by MicroSepTec; or Busse The most recent US standard (not counting newer state standards) is the ANSI/NSF 350.1 Read it for the test standards RedHorse must meet. Here are some relevant international standards. International standards...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/0.5/testing.html",
+        "url": "/0.5/testing.html",
         "teaser":null},{
         "title": "Overview of Distributed Treatment Systems",
         
@@ -862,7 +1077,7 @@ initFunction(initPrint)
             "Chapter 1: Introduction Over two billion people today have inadequate sanitation. Dozens of groups world-wide are attempting to bring new science and new, low-cost technologies together to create inexpensive, locally-produced devices to build a new system of distributed waste treatment accessible to all. To change water and waste-water systems from today's model of large, piped, centrally-processed systems to a new distributed system requires four mutually supportive components: a clear understanding of the science and engineering of water and waste a design and implementation plan based on specific characteristics of each site an economic and business plan capable of sustainable, profitable...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/1/overview.html",
+        "url": "/01/1/overview.html",
         "teaser":null},{
         "title": "Designing Distributed Treatment Systems",
         
@@ -870,7 +1085,7 @@ initFunction(initPrint)
             "Design of Distributed Water Treatment Systems Since 2010 Minimum Volume, Energy, Cost, Water Use Leading Institutions The Gates Foundation Toilet initiative has supported hundreds of researchers and research institutions to develop technologies appropriate for urban slums and rural farms. Gates Foundation Toilet Expo 2018 Each academic project has been strongly encouraged to create a commercial component, to move toward global volume. Today's commercial products include: China (Clear, CRRC, EcoSan) United States (Sedron Technologies) India (Eram Scientific, Ankur Scientific, Tide Technocrats) Thailand (SCG Chemicals) Japan (LIXIL) Twenty reinvented toilet and omni-processor technologies and products rooted in the foundation’s portfolio of investments...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/1/waste-treatment-design.html",
+        "url": "/01/1/waste-treatment-design.html",
         "teaser":null},{
         "title": "Data Science for Waste Water Engineering",
         
@@ -878,7 +1093,7 @@ initFunction(initPrint)
             "Data Science applied to Wastewater Engineering Data Science Systematic techniques to draw useful conclusions from large and diverse data sets. Four main areas: analytic model design, exploration, prediction, and inference. Wastewater Data Science Model design: builds mathematical models of each element of a coupled system: physical, chemical, hydrodynamical and biological. Uses methods of numerical linear algebra, differential equations, and chemical and mechanical engineering. Exploration: Acquires empirical data from operating waste water treatment systems. Used to calibrate and refine analytical models of actual operating systems, and for day-to-day operations and maintenance. Exploration of these data sets depends upon rapid visualization, coupled...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/1/ww-datascience.html",
+        "url": "/01/1/ww-datascience.html",
         "teaser":null},{
         "title": "Biblio",
         
@@ -886,7 +1101,7 @@ initFunction(initPrint)
             "CORBURN, J. A. S. O. N., &amp; RILEY, L. E. E. (2016). Toward Slum Health Equity:: Research, Action, and Training. In J. Corburn &amp; L. Riley (Eds.), Slum Health (1st ed., pp. 275–296). University of California Press. Tornimbene, B., Eremin, S., Escher, M., Griskeviciene, J., Manglani, S., &amp; Pessoa-Silva, C. L. (2018). WHO Global Antimicrobial Resistance Surveillance System Early Implementation 2016–17. The Lancet Infectious Diseases, 18(3), 241–242. https://doi.org/10.1016/S1473-3099(18)30060-4 Peters, D. H. (2014). The Application of Systems Thinking in Health: Why Use Systems Thinking? Health Research Policy and Systems, 12(1). https://doi.org/10.1186/1478-4505-12-51 Mukeku, J. (2018). Urban Slum Morphology and Socio-Economic Analogies: A...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/3/biblio.html",
+        "url": "/01/3/biblio.html",
         "teaser":null},{
         "title": "RedHorse Constructors Research Platform",
         
@@ -894,7 +1109,7 @@ initFunction(initPrint)
             "     RedHorse Research Platform  RedHorse Constructors is building a series of models of sewerless sanitation systems.  The challenge is to provide, in a small volume, an energy-efficient coupling of technologies to remove pathogens, remove ionic contaminants, and provide high-quality water that could enable potable reuse.  Alternative configurations may provide treated water at a quality sufficient for irrigation.  Sludge material may be utilized for energy, or for agricultural fertilizer.  Urine-derivatives may be used for fertilizer.  Our goal is to provide a global test-bed for distributed water treatment systems.             ",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/3/why-research-platform.html",
+        "url": "/01/3/why-research-platform.html",
         "teaser":null},{
         "title": "Statistical-techniques",
         
@@ -902,7 +1117,7 @@ initFunction(initPrint)
             "Statistical Techniques The discipline of statistics has long addressed the same fundamental challenge as data science: how to draw robust conclusions about the world using incomplete information. One of the most important contributions of statistics is a consistent and precise vocabulary for describing the relationship between observations and conclusions. This text continues in the same tradition, focusing on a set of core inferential problems from statistics: testing hypotheses, estimating confidence, and predicting unknown quantities. Data science extends the field of statistics by taking full advantage of computing, data visualization, machine learning, optimization, and access to information. The combination of fast...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/01/4/statistical-techniques.html",
+        "url": "/01/4/statistical-techniques.html",
         "teaser":null},{
         "title": "Features and customization",
         
@@ -910,7 +1125,7 @@ initFunction(initPrint)
             "Features This is a short demonstration textbook to show the general layout / style of textbooks built with Jupyter and Jekyll. The markdown files for this page (and others in the textbook) is generated from the notebooks with the scripts/generate_textbook.py script, which is called when you run make book. The content for the book is contained in a folder in the site's repository called content/. It has a combination of markdown and Jupyter notebooks. This content is rendered into the textbook that you see here! To begin, click on one of the chapter sections in the sidebar to the left....",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/features/features.html",
+        "url": "/features/features.html",
         "teaser":null},{
         "title": "Markdown files",
         
@@ -918,7 +1133,7 @@ initFunction(initPrint)
             "Creating book content The two kinds of files that contain course content are: Jupyter Notebooks Markdown files Each are contained in the content/ folder and referenced from _data/toc.yml. If the file is markdown, it will be copied over with front-matter YAML added so that Jekyll can parse it Sidebars with Jekyll You may notice that there's a sidebar to the right (if your screen is wide enough). These are automatically generated from the headers that are present in your page. The sidebar will automatically capture all 2nd and 3rd level section headers. The best way to designate these headers is...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/features/markdown.html",
+        "url": "/features/markdown.html",
         "teaser":null},{
         "title": "Jupyter notebooks",
         
@@ -926,15 +1141,127 @@ initFunction(initPrint)
             "Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and $$ math^{blocks} $$or $$ \\begin{align*} \\mbox{mean} la_{tex} \\\\ \\\\ math blocks \\end{align*} $$But make sure you \\$Escape \\$your \\$dollar signs...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/features/notebooks.html",
+        "url": "/features/notebooks.html",
         "teaser":null},{
-        "title": "Most recent update",
+        "title": "Biblio",
         
         "excerpt":
-            "     Survey of international and US technology for household-level wastewater processing  Published as JupyterBook on Monday, August 19, 2019, and revised on Friday morning, September 27, 2019 New material: 18 Oct 2019 Chapter reorganization: to be done this weekend.             ",
+            "CORBURN, J. A. S. O. N., &amp; RILEY, L. E. E. (2016). Toward Slum Health Equity:: Research, Action, and Training. In J. Corburn &amp; L. Riley (Eds.), Slum Health (1st ed., pp. 275–296). University of California Press. Tornimbene, B., Eremin, S., Escher, M., Griskeviciene, J., Manglani, S., &amp; Pessoa-Silva, C. L. (2018). WHO Global Antimicrobial Resistance Surveillance System Early Implementation 2016–17. The Lancet Infectious Diseases, 18(3), 241–242. https://doi.org/10.1016/S1473-3099(18)30060-4 Peters, D. H. (2014). The Application of Systems Thinking in Health: Why Use Systems Thinking? Health Research Policy and Systems, 12(1). https://doi.org/10.1186/1478-4505-12-51 Mukeku, J. (2018). Urban Slum Morphology and Socio-Economic Analogies: A...",
         "categories": [],
         "tags": [],
-        "url": "https://johngage.github.io/h1/intro.html",
+        "url": "/hwt/biblio.html",
+        "teaser":null},{
+        "title": "Overview of Distributed Treatment Systems",
+        
+        "excerpt":
+            "     Design of HWT Systems   processes biological thermal UV filter chemical               ",
+        "categories": [],
+        "tags": [],
+        "url": "/hwt/design.html",
+        "teaser":null},{
+        "title": "Overview of Distributed Treatment Systems",
+        
+        "excerpt":
+            "Overview Over two billion people today have inadequate sanitation. Dozens of groups world-wide are attempting to bring new science and new, low-cost technologies together to create inexpensive, locally-produced devices to build a new system of distributed waste treatment accessible to all. Home Water Treatment, or Distributed Water Treatment, or Non-sewer Systems. To change water and waste-water systems from today's model of large, piped, centrally-processed systems to a new distributed system requires four mutually supportive components: a clear understanding of the science and engineering of water and waste a design and implementation plan based on specific characteristics of each site an...",
+        "categories": [],
+        "tags": [],
+        "url": "/hwt/overview.html",
+        "teaser":null},{
+        "title": "Designing Distributed Treatment Systems",
+        
+        "excerpt":
+            "Design of Distributed Water Treatment Systems Since 2010 Minimum Volume, Energy, Cost, Water Use Leading Institutions The Gates Foundation Toilet initiative has supported hundreds of researchers and research institutions to develop technologies appropriate for urban slums and rural farms. Gates Foundation Toilet Expo 2018 Each academic project has been strongly encouraged to create a commercial component, to move toward global volume. Today's commercial products include: China (Clear, CRRC, EcoSan) United States (Sedron Technologies) India (Eram Scientific, Ankur Scientific, Tide Technocrats) Thailand (SCG Chemicals) Japan (LIXIL) Twenty reinvented toilet and omni-processor technologies and products rooted in the foundation’s portfolio of investments...",
+        "categories": [],
+        "tags": [],
+        "url": "/hwt/waste-treatment-design.html",
+        "teaser":null},{
+        "title": "RedHorse Constructors Research Platform",
+        
+        "excerpt":
+            "     RedHorse Research Platform  RedHorse Constructors is building a series of models of sewerless sanitation systems.  The challenge is to provide, in a small volume, an energy-efficient coupling of technologies to remove pathogens, remove ionic contaminants, and provide high-quality water that could enable potable reuse.  Alternative configurations may provide treated water at a quality sufficient for irrigation.  Sludge material may be utilized for energy, or for agricultural fertilizer.  Urine-derivatives may be used for fertilizer.  Our goal is to provide a global test-bed for distributed water treatment systems.             ",
+        "categories": [],
+        "tags": [],
+        "url": "/hwt/why-research-platform.html",
+        "teaser":null},{
+        "title": "Data Science for Waste Water Engineering",
+        
+        "excerpt":
+            "Data Science applied to Wastewater Engineering Data Science Systematic techniques to draw useful conclusions from large and diverse data sets. Four main areas: analytic model design, exploration, prediction, and inference. Wastewater Data Science Model design: builds mathematical models of each element of a coupled system: physical, chemical, hydrodynamical and biological. Uses methods of numerical linear algebra, differential equations, and chemical and mechanical engineering. Exploration: Acquires empirical data from operating waste water treatment systems. Used to calibrate and refine analytical models of actual operating systems, and for day-to-day operations and maintenance. Exploration of these data sets depends upon rapid visualization, coupled...",
+        "categories": [],
+        "tags": [],
+        "url": "/hwt/ww-datascience.html",
+        "teaser":null},{
+        "title": "Measuring Nutrient Mass",
+        
+        "excerpt":
+            "3.1 Expressions And Units For Analyzing Wastewater Flows Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the Python programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs. Programs are made up of expressions, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a * symbol between two numerical expressions. Expressions,...",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/ExpressionsAndUnits.html",
+        "teaser":null},{
+        "title": "Redhorse August Workplan",
+        
+        "excerpt":
+            "     Work Plan for August and September   Publish the design drawings Add ports to extract sludge Can be innovative here: just attach shop-vac   Build biofilm on all treatment surfaces Measure biofilm Prepare testing regime for reduction of CBOD, TSS             ",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/augworkplan.html",
+        "teaser":null},{
+        "title": "Introduction",
+        
+        "excerpt":
+            "Waste Water Treatment Design for non-sewered systems Updated: Friday, Oct 18, 2018 Household Treatment Systems: design, construction, operation, and maintenance with real-time controls Overview of major initiatives in the OnSite treatment revolution: 2000 Where are we, almost twenty years later? See below for new national and international standards, for lists of manufacturers of on-site systems, and for the most recent research. This working document surveys global research and development of non-sewered sanitation systems, or NSSS, surveyed in 2018 in Beijing at the Reinvent Toilet Expo 2018. These systems are also known as \"on-site treatment\", or \"distributed treatment\" facilities. New Standards...",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/intro1.html",
+        "teaser":null},{
+        "title": "Manufacturers and Patents",
+        
+        "excerpt":
+            "Vendors of Home Treatment Systems by standards certification by country by patent ## Vendor Standards Certifications Vendor ANSI 40 ANSI 245 ANSI 350.1 Residential &gt;400gpd Nitrogen &lt;19 mg/L Pugo Systems X X unk Biorealis unk unk unk Biomicrobics Microfast X X unk Biomicrobics Biobarrier X X X BOD &lt; 5mg/L;TSS&lt; 2mg/L;Turb&lt;.2NTU;fec&lt;200CFU/100ml Biomicrobics SeptiTech X X unk Commercial manufacturers linked to Gates Foundation Toilet Initiative For an overview from the Gates Foundation Sanitation Division, see 2019 Gates Foundation Wastewater Treatment China Clear CRRC EcoSan United States Sedron Technologies (Janicki) OmniProcessor Sedron Technologies (Janicki) Firelight Toilet India Eram Scientific-CalTech Ankur Scientific (distributing...",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/manufacturers.html",
+        "teaser":null},{
+        "title": "RedHorse Wetlands in a Box",
+        
+        "excerpt":
+            "     RedHorse  RedHorse implementation in August, 2019   Assignments for working team:   Read ANSI/NSF 350.1, the new US standard for household treatment certification.  It lists the test elements and the CBOD5 and TSS values we must reach to pass the test.  It also says how, in general, to run the tests. Look at the page Testing for more detail. Review all the competing products listed on the Manufacturers page, and their testing regimes.             ",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/redhorse.html",
+        "teaser":null},{
+        "title": "Testing",
+        
+        "excerpt":
+            "Testing procedures What are we testing for? Decreased organic material. Usual sewage influent measures: Test CBOD5 TSS mg/L mg/L Influent sewage 350 - 600 360-600 Treated Effluent 10 10 Once we show adequate performance in simple reduction of CBOD--one measurement of the amount of organic material in the influent--we must turn to more comprehensive measures. Here's an example of test results for a system sold by MicroSepTec; or Busse The most recent US standard (not counting newer state standards) is the ANSI/NSF 350.1 Read it for the test standards RedHorse must meet. Here are some relevant international standards. International standards...",
+        "categories": [],
+        "tags": [],
+        "url": "/implementations/testing.html",
+        "teaser":null},{
+        "title": "Survey",
+        
+        "excerpt":
+            "Most Recent Update Published as JupyterBook on Monday, August 19, 2019, and revised on Friday morning, September 27, 2019 New material: 28 Oct 2019 Survey of international and US technology for household-level wastewater processing These systems are subcomponents of net-zero self-sustaining systems for life support, once only designed for space stations and planetary exploration. Advances in the aerospace communities are now applied to devices for use in slum and rural communities on Earth. See this 2015 Article: The World's Need for Household Water Treatment This site surveys the science, engineering, construction, and operation of household-size water and wastewater treatment systems,...",
+        "categories": [],
+        "tags": [],
+        "url": "/intro.html",
+        "teaser":null},{
+        "title": "Jupyter Notebooks for analysis",
+        
+        "excerpt":
+            "     Collection of Jupyter Notebooks for wastewater analysis  Jupyter notebooks for hydrodynamic flow models of coupled reactors   jupyternotebook Jupyter notebooks for dynamic microbial biome models: growth and death of biofilms -&gt; sloughing rate   Model by species Model by density             ",
+        "categories": [],
+        "tags": [],
+        "url": "/waterdatascience/jupyternotebook.html",
+        "teaser":null},{
+        "title": "Statistical-techniques",
+        
+        "excerpt":
+            "Statistical Techniques The discipline of statistics has long addressed the same fundamental challenge as data science: how to draw robust conclusions about the world using incomplete information. One of the most important contributions of statistics is a consistent and precise vocabulary for describing the relationship between observations and conclusions. This text continues in the same tradition, focusing on a set of core inferential problems from statistics: testing hypotheses, estimating confidence, and predicting unknown quantities. Data science extends the field of statistics by taking full advantage of computing, data visualization, machine learning, optimization, and access to information. The combination of fast...",
+        "categories": [],
+        "tags": [],
+        "url": "/waterdatascience/statistical-techniques.html",
         "teaser":null},]
 </script>
             </div>
