@@ -3,6 +3,17 @@
 
 Published as JupyterBook on Monday, August 19, 2019, and revised on Friday morning, September 27, 2019
 New material: 28 Oct 2019
+Revision: 13 Feb 2020
+
+# Overview
+
+Hundreds of firms in the US, Europe, Japan and China sell on-site systems that treat household waste water to almost-potable or potable levels.
+
+Here's a list of global firms that is kept up-to-date by NSF, an independent testing organization:  [https://info.nsf.org/Certified/Wastewater/Listings.asp?TradeName=&Standard=040]
+
+It has links to websites for each firm.  I will compile a summary of what is available, but, for now, a 600 gallon per day system that could support a family of 4 costs about $4,500.  Addition of final treatment to make the effluent potable, and addition of sophisticated testing for pathogens could add $500. 
+
+As an example, see Norweco, distributed by Home Depot in the US: [ https://www.norweco.com/residential/hydro-kinetic-concrete/ ]  or [ https://www.homedepot.com/p/Norweco-Singulair-Green-600-GPD-Aerobic-Tank-Septic-Replacement-Shipping-Included-960G-500X-210P/300786435].
 
 # Survey of international and US technology for household-level wastewater processing
 
