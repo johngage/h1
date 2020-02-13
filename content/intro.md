@@ -9,11 +9,13 @@ Revision: 13 Feb 2020
 
 Hundreds of firms in the US, Europe, Japan and China sell on-site systems that treat household waste water to almost-potable or potable levels.
 
-Here's a list of global firms that is kept up-to-date by NSF, an independent testing organization:  [https://info.nsf.org/Certified/Wastewater/Listings.asp?TradeName=&Standard=040]
+Here's a list of global firms providing On-site Wastewater Treatment Systems (OWTS), maintained by NSF, an independent testing organization:  [https://info.nsf.org/Certified/Wastewater/Listings.asp?TradeName=&Standard=040]
 
-It has links to websites for each firm.  I will compile a summary of what is available, but, for now, a 600 gallon per day system that could support a family of 4 costs about $4,500.  Addition of final treatment to make the effluent potable, and addition of sophisticated testing for pathogens could add $500. 
+This list has links to websites for each firm.  I'm  compiling a summary of available systems in 2020, but, for now, a 600 gallon per day system that could support a family of 4 costs about $4,500.  Addition of final treatment to make the effluent potable,  addition of sophisticated testing for pathogens, and addition of nitrogen-removing systems could add $1,000.
 
 As an example, see Norweco, distributed by Home Depot in the US: [ https://www.norweco.com/residential/hydro-kinetic-concrete/ ]  or [ https://www.homedepot.com/p/Norweco-Singulair-Green-600-GPD-Aerobic-Tank-Septic-Replacement-Shipping-Included-960G-500X-210P/300786435].
+
+For a well-written recent survey (2016) and ranking methodology for OWTS, focused on nitrogen removal, see [ https://www.stonybrook.edu/commcms/cleanwater/_pdfs/Technology%20Assessment%2005%2017%202016.pdf].
 
 # Survey of international and US technology for household-level wastewater processing
 
